@@ -1,49 +1,76 @@
 ######################
-# Source packages
-library(GenSA)
 
-# Load the model
-source('R/Model_GenSA.R')
+#fitting function----
+fit_it <- function(Tlevel1, Tlevel2){
+  require(GenSA)
+  
+  # Load the model
+  source('R/Model_GenSA.R')
+  
+  # Initial values 
+  lm_M = lm(Tlevel1 ~ Tlevel2)
+  pars = c(a0 = lm_M$coefficients[1],a1 = lm_M$coefficients[2],b0 = sd(lm_M$residuals),b1 = 0)
+  
+  # Boundaries 
+  par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10)
+  par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10)
+  #Nacho comment: are those especific to the data ranges?
+  
+  # Maximum likelihood estimation
+  estim.pars = GenSA(par = pars, fn = model, lower = par_lo, upper= par_hi, 
+                     control = list(verbose =TRUE, max.time = 1000, smooth=FALSE), 
+                     Tlevel1 = Tlevel1, Tlevel2 = Tlevel2)
+  
+  estim.pars$par  
+}
 
-# Load data
-original_data = read.csv2("data/size_Barnes2008.csv",dec=".")
+#ploting function
+plot.pred <- function(pars,Tlevel1, Tlevel2){
+  seqX = seq(min(Tlevel2),max(Tlevel2),0.01)
+  seqY = seq(min(Tlevel1),max(Tlevel1),0.01)
+  
+  XY = expand.grid(seqX,seqY)
+  
+  # Optimum and range
+  o = pars[1] + pars[2]*XY[,1]
+  r = pars[3] + pars[4]*XY[,1]
+  
+  # Compute the conditional
+  pLM = exp(-(o-XY[,2])^2/2/r^2)
+  
+  Z = matrix(pLM,nr = length(seqX), nc = length(seqY))
+  
+  image(seqX,seqY,Z,xlab = "Trait level 2",ylab = "Trait level 1",
+        col=heat.colors(10000),cex.axis = 1.25, cex.lab = 1.5, las = 1)
+  points(Tlevel2,Tlevel1,pch = 19, cex = 0.1)  
+}
+
+
+# Load data for Pred/Prey
+original_data = read.csv2("temp/size_Barnes2008.csv",dec=".")
 head(original_data)
 MPred = log10(original_data$standardised_predator_length)
 MPrey = log10(original_data$si_prey_length)
 
-# Initial values 
-lm_M = lm(MPrey~MPred)
-pars = c(a0 = lm_M$coefficients[1],a1 = lm_M$coefficients[2],b0 = sd(lm_M$residuals),b1 = 0)
 
-# Boundaries
-par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10)
-par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10)
+#pred/prey
+pars_pre <- fit_it(Tlevel1 = MPred, 
+                     Tlevel2 = MPrey)
 
-# Maximum likelihood estimation
-estim.pars = GenSA(par = pars, fn = model, lower = par_lo, upper= par_hi, 
-                   control = list(verbose =TRUE, max.time = 1000, smooth=FALSE), 
-                   Tlevel1 = MPrey, Tlevel2 = MPred)
+plot.pred(pars = pars_pre, Tlevel1 = MPred, 
+          Tlevel2 = MPrey)
 
-write.table(estim.pars$par,file="R/pars.txt")
 
-#For grasshoppers data----
-# Load data
-original_data = read.table("data/Deraison2014.txt", h = TRUE)
-head(original_data)
-original_data <- subset(original_data, Herbivory > 10)
+# Load data for grasshoppers
+grass = read.table("data/Deraison2014.txt", h = TRUE)
+head(grass)
+grass <- subset(grass, Herbivory > 10)
 
-# Initial values 
-lm_M = lm(original_data$G.Incisive.strength ~ original_data$P.Leaf.dry.matter.content)
-pars = c(a0 = lm_M$coefficients[1],a1 = lm_M$coefficients[2],b0 = sd(lm_M$residuals),b1 = 0)
+#grasshoppers
+pars_grass <- fit_it(Tlevel1 = grass$G.Incisive.strength, 
+                     Tlevel2 = grass$P.Leaf.dry.matter.content)
 
-# Boundaries
-par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10)
-par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10)
+plot.pred(pars = pars_grass, Tlevel1 = grass$G.Incisive.strength, 
+          Tlevel2 = grass$P.Leaf.dry.matter.content)
 
-# Maximum likelihood estimation
-estim.pars = GenSA(par = pars, fn = model, lower = par_lo, upper= par_hi, 
-                   control = list(verbose =TRUE, max.time = 1000, smooth=FALSE), 
-                   Tlevel1 = original_data$G.Incisive.strength, Tlevel2 = original_data$P.Leaf.dry.matter.content)
-
-write.table(estim.pars$par,file="R/pars.txt")
 
