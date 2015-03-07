@@ -47,6 +47,7 @@ plot.pred <- function(pars,Tlevel1, Tlevel2){
 
 
 # Load data for Pred/Prey
+#I DIDN'T UPLOAD THE DATA TO GIT BECAUSE THE REPO WILL GO OPEN EVENTUALLY AND I DON'T KNOW IF THIS DATA IS PUBLIC
 original_data = read.csv2("temp/size_Barnes2008.csv",dec=".")
 head(original_data)
 MPred = log10(original_data$standardised_predator_length)
@@ -72,5 +73,4 @@ pars_grass <- fit_it(Tlevel1 = grass$G.Incisive.strength,
 
 plot.pred(pars = pars_grass, Tlevel1 = grass$G.Incisive.strength, 
           Tlevel2 = grass$P.Leaf.dry.matter.content)
-
 
