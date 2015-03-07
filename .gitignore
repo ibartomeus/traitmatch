@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 /figures
+/temp
+.DS_Store
