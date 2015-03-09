@@ -112,6 +112,13 @@ pars_host_bin <- fit_it(Tlevel1 = host$host_body_length,
 plot.pred(pars = pars_host_bin, Tlevel1 = host$host_body_length, 
           Tlevel2 = host$parasite_body_length)
 
+#log?
+pars_host_bin_log <- fit_it(Tlevel1 = log(host$host_body_length), 
+                        Tlevel2 = log(host$parasite_body_length))
+
+plot.pred(pars = pars_host_bin_log, Tlevel1 = log(host$host_body_length), 
+          Tlevel2 = log(host$parasite_body_length))
+#same result... not biologically meaningful.
 
 
 
