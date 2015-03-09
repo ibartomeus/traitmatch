@@ -54,7 +54,7 @@ MPred = log10(original_data$standardised_predator_length)
 MPrey = log10(original_data$si_prey_length)
 
 
-#pred/prey
+#pred/prey----
 pars_pre <- fit_it(Tlevel1 = MPred, 
                      Tlevel2 = MPrey)
 
@@ -67,10 +67,51 @@ grass = read.table("data/Deraison2014.txt", h = TRUE)
 head(grass)
 grass <- subset(grass, Herbivory > 10)
 
-#grasshoppers
-pars_grass <- fit_it(Tlevel1 = grass$G.Incisive.strength, 
-                     Tlevel2 = grass$P.Leaf.dry.matter.content)
+#grasshoppers--------
+pars_grass_bin <- fit_it(Tlevel1 = grass$G.Incisive.strength, 
+                     Tlevel2 = grass$P.Leaf.carbon.nitrogen.ratio)
 
-plot.pred(pars = pars_grass, Tlevel1 = grass$G.Incisive.strength, 
+plot.pred(pars = pars_grass_bin, Tlevel1 = grass$G.Incisive.strength, 
+          Tlevel2 = grass$P.Leaf.carbon.nitrogen.ratio)
+
+# Make frequentistic grasshoper data
+grass = read.table("data/Deraison2014.txt", h = TRUE)
+grass <- subset(grass, Herbivory > 0)
+head(grass)
+
+#NOTE: If model is sentistive to sample size, which may not be, 
+  #this may be an arbitrary way to convert to frequencies.
+Incisive.strength <- c()
+for(i in 1:nrow(grass)){
+  temp <- rep(grass$G.Incisive.strength[i], round(grass$Herbivory[i]))
+  Incisive.strength <- c(Incisive.strength,temp)
+}
+
+Carbon.nitrogen <- c()
+for(i in 1:nrow(grass)){
+  temp <- rep(grass$P.Leaf.carbon.nitrogen.ratio[i], round(grass$Herbivory[i]))
+  Carbon.nitrogen <- c(Carbon.nitrogen,temp)
+}
+
+#and fit
+pars_grass_freq <- fit_it(Tlevel1 = Incisive.strength, 
+                     Tlevel2 = Carbon.nitrogen)
+
+plot.pred(pars = pars_grass_freq, Tlevel1 = grass$G.Incisive.strength, 
           Tlevel2 = grass$P.Leaf.dry.matter.content)
+#comparision of bin and freq plots looks beatiful!
+
+
+#Host/para-------
+host = read.table("data/Tylianakis2008.txt", h = TRUE)
+head(host)
+
+pars_host_bin <- fit_it(Tlevel1 = host$host_body_length, 
+                         Tlevel2 = host$parasite_body_length)
+
+plot.pred(pars = pars_host_bin, Tlevel1 = host$host_body_length, 
+          Tlevel2 = host$parasite_body_length)
+
+
+
 
