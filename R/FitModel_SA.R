@@ -25,7 +25,7 @@ fit_it <- function(Tlevel1, Tlevel2){
 }
 
 #ploting function
-plot.pred <- function(pars,Tlevel1, Tlevel2){
+plot.pred <- function(pars,Tlevel1, Tlevel2, xlab = "Trait level 2", ylab = "Trait level 1"){
   seqX = seq(min(Tlevel2),max(Tlevel2),0.01)
   seqY = seq(min(Tlevel1),max(Tlevel1),0.01)
   
@@ -40,7 +40,7 @@ plot.pred <- function(pars,Tlevel1, Tlevel2){
   
   Z = matrix(pLM,nr = length(seqX), nc = length(seqY))
   
-  image(seqX,seqY,Z,xlab = "Trait level 2",ylab = "Trait level 1",
+  image(seqX,seqY,Z,xlab = xlab ,ylab = ylab,
         col=heat.colors(10000),cex.axis = 1.25, cex.lab = 1.5, las = 1)
   points(Tlevel2,Tlevel1,pch = 19, cex = 0.1)  
 }
@@ -72,7 +72,7 @@ pars_grass_bin <- fit_it(Tlevel1 = grass$G.Incisive.strength,
                      Tlevel2 = grass$P.Leaf.carbon.nitrogen.ratio)
 
 plot.pred(pars = pars_grass_bin, Tlevel1 = grass$G.Incisive.strength, 
-          Tlevel2 = grass$P.Leaf.carbon.nitrogen.ratio)
+          Tlevel2 = grass$P.Leaf.carbon.nitrogen.ratio, xlab = "C:N ratio", ylab = "Incisive strength")
 
 # Make frequentistic grasshoper data
 grass = read.table("data/Deraison2014.txt", h = TRUE)
@@ -98,13 +98,15 @@ pars_grass_freq <- fit_it(Tlevel1 = Incisive.strength,
                      Tlevel2 = Carbon.nitrogen)
 
 plot.pred(pars = pars_grass_freq, Tlevel1 = grass$G.Incisive.strength, 
-          Tlevel2 = grass$P.Leaf.dry.matter.content)
+          Tlevel2 = grass$P.Leaf.dry.matter.content, xlab = "C:N ratio", ylab = "Incisive strength")
 #comparision of bin and freq plots looks beatiful!
 
 
 #Host/para-------
 host = read.table("data/Tylianakis2008.txt", h = TRUE)
 head(host)
+
+plot(host$host_body_length ~ host$parasite_body_length)
 
 pars_host_bin <- fit_it(Tlevel1 = host$host_body_length, 
                          Tlevel2 = host$parasite_body_length)
@@ -119,6 +121,19 @@ pars_host_bin_log <- fit_it(Tlevel1 = log(host$host_body_length),
 plot.pred(pars = pars_host_bin_log, Tlevel1 = log(host$host_body_length), 
           Tlevel2 = log(host$parasite_body_length))
 #same result... not biologically meaningful.
+
+#pollintors
+pols = read.table("data/Bartomeus2008.txt", h = TRUE)
+head(pols)
+pols <- subset(pols, nectar_holder_depth_mm < 15)
+#Dominique, note that this outyier has a tremendous influence in the model.
+
+pars_pols <- fit_it(Tlevel1 = pols$IT_mm, 
+                        Tlevel2 = pols$nectar_holder_depth_mm)
+
+plot.pred(pars = pars_pols, Tlevel1 = pols$IT_mm, 
+          Tlevel2 = pols$nectar_holder_depth_mm, xlab = "Nectar depth", ylab = "Pollinator size")
+
 
 
 
