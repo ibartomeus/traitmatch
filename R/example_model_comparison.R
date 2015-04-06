@@ -16,7 +16,8 @@ a0 = 1.5
 a1 = 1
 b0 = 1
 b1 = 0.0
-h = 0.1
+
+true_pars = c(a0 = a0, a1 = a1, b0 = b0, b1 = b1)
 
 # Random traits
 Tlevel1 = rnorm(S,1,1)
@@ -45,7 +46,7 @@ o = a0 + a1*eTraits[,2]
 r = b0 + b1*eTraits[,2]
 
 # Compute interaction probability between pairs of species
-pL = h*exp(-(o-eTraits[,1])^2/2/r^2)
+pL = exp(-(o-eTraits[,1])^2/2/r^2)
 
 # Determine interactions
 L = numeric(length(pL))
@@ -73,36 +74,40 @@ for(i in 1:S)
 sTlevel1 = agTraits[agL!=0,1]
 sTlevel2 = agTraits[agL!=0,2]
 
+
+##############################
 ##############################
 # Model comparison
  
 # Load the model
 source('Model_GenSA.R')  
 
-# Integrated model without weights
-# Fit parameters
+######
+# Fit models
+# Integrated model
 res_integrated = fit_it(integrated_model, sTlevel1, sTlevel2, mean_Tlevel1, sd_Tlevel1)
-# Likelihood
+
+# Integrated model with weights
+res_integrated_w = fit_it(integrated_model, sTlevel1, sTlevel2, mean_Tlevel1_w, sd_Tlevel1_w)
+
+# Niche model
+res_niche = fit_it(niche_model, sTlevel1, sTlevel2, mean_Tlevel1, sd_Tlevel1)
+
+######
+# Compare likelihoods
+# Integrated model
 -integrated_model(res_integrated, sTlevel1, sTlevel2, mean_Tlevel1, sd_Tlevel1)
 
 # Integrated model with weights
-# Fit parameters
-res_integrated_w = fit_it(integrated_model, sTlevel1, sTlevel2, mean_Tlevel1_w, sd_Tlevel1_w)
-# Likelihood
 -integrated_model(res_integrated_w, sTlevel1, sTlevel2, mean_Tlevel1_w, sd_Tlevel1_w)
 
 # Niche model
-# Fit parameters
-res_niche = fit_it(niche_model, sTlevel1, sTlevel2, mean_Tlevel1, sd_Tlevel1)
-# Likelihood
 -niche_model(res_niche, sTlevel1, sTlevel2, mean_Tlevel1, sd_Tlevel1)
 
-# Neutral model without weights
-# Likelihood
+# Neutral model 
 -neutral_model(sTlevel1, sTlevel2, mean_Tlevel1, sd_Tlevel1)
 
 # Neutral model with weights
-# Likelihood
 -neutral_model(sTlevel1, sTlevel2, mean_Tlevel1_w, sd_Tlevel1_w)
 
 
