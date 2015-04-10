@@ -80,7 +80,7 @@ sTlevel2 = agTraits[agL!=0,2]
 # Model comparison
  
 # Load the model
-source('Model_GenSA.R')  
+source('R/Model_GenSA.R')  
 
 ######
 # Fit models

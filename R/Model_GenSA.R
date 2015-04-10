@@ -104,22 +104,22 @@ weighted.sd <- function(x, w) {
 } 
 
 ######################
-fit_it <- function(model, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1){
- 
-  require(GenSA)
-  
+#fit_it <- function(model, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1){
+ #
+ #  require(GenSA)
+ #
   # Initial values 
-  pars = c(a0 = 0, a1 = 0, b0 = 0, b1 = 0)
+ # pars = c(a0 = 0, a1 = 0, b0 = 0, b1 = 0)
   
   # Boundaries 
-  par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10)
-  par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10)
+ #par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10)
+ #par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10)
 
   # Maximum likelihood estimation
-	GenSA(par = pars, fn = model, lower = par_lo, upper= par_hi, 
-    control = list(verbose =TRUE, max.time = 1000, smooth=FALSE), 
-    Tlevel1 = Tlevel1, Tlevel2 = Tlevel2, mean_Tlevel1 = mean_Tlevel1, sd_Tlevel1 = sd_Tlevel1)$par
-}
+	#GenSA(par = pars, fn = model, lower = par_lo, upper= par_hi, 
+   # control = list(verbose =TRUE, max.time = 1000, smooth=FALSE), 
+   # Tlevel1 = Tlevel1, Tlevel2 = Tlevel2, mean_Tlevel1 = mean_Tlevel1, sd_Tlevel1 = sd_Tlevel1)$par
+#}
 
 
 
