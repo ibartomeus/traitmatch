@@ -35,6 +35,7 @@ lh_niche <- -niche_model(pars_pre_niche, MPred, MPrey, mean(MPred), sd(MPrey))
 lh_neutral <- -neutral_model(MPred, MPrey, mean(MPred), sd(MPrey))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
+l1 <- c("Predation", lh_model, lh_niche, lh_neutral)
 
 # Load data for grasshoppers
 grass = read.table("data/Deraison2014.txt", h = TRUE)
@@ -67,6 +68,7 @@ lh_neutral <- -neutral_model(grass$G.Incisive.strength, grass$P.Leaf.carbon.nitr
                              mean(grass$G.Incisive.strength), sd(grass$G.Incisive.strength))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
+l2 <- c("Hervibory_bin", lh_model, lh_niche, lh_neutral)
 
 # Make frequentistic grasshoper data
 grass = read.table("data/Deraison2014.txt", h = TRUE)
@@ -125,6 +127,7 @@ lh_neutral <- -neutral_model(Incisive.strength, Carbon.nitrogen,
                              mean(Incisive.strength), sd(Incisive.strength))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
+l3 <- c("Hervibory_freq", lh_model, lh_niche, lh_neutral)
 
 #Host/para-------
 host = read.table("data/Tylianakis2008.txt", h = TRUE)
@@ -160,6 +163,7 @@ lh_neutral <- -neutral_model(host$parasite_body_length, host$host_body_length,
                              weighted.mean(host$parasite_body_length, host$freq), weighted.sd(host$parasite_body_length, host$freq))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
+l4 <- c("Parasitsim", lh_model, lh_niche, lh_neutral)
 
 
 #pollintor----
@@ -198,5 +202,10 @@ lh_neutral <- -neutral_model(pols$IT_mm, pols$nectar_holder_depth_mm,
                              mean(pols$IT_mm), sd(pols$IT_mm))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
+l5 <- c("Pollintion", lh_model, lh_niche, lh_neutral)
 
-
+#table of likelyhoods
+d <- rbind(l1,l2,l3,l4,l5)
+d <- as.data.frame(d)
+colnames(d) <- c("system", "integrated", "niche", "neutral")
+d

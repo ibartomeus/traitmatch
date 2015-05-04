@@ -68,7 +68,7 @@ niche_model = function(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	b1 = pars[4]
 
 	# Optimum and range
-	o = a0 + a1*Tlevel2 
+	o = a0 + a1*Tlevel2  #Here we can try polimonial functions
 	r = b0 + b1*Tlevel2
 
 	# Compute the conditional

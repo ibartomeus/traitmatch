@@ -8,12 +8,12 @@ fit_it <- function(model, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1){
   source('R/Model_GenSA.R')
   
   # Initial values 
-  pars = c(a0 = 0, a1 = 0, b0 = 0, b1 = 0)
+  pars = c(a0 = 0, a1 = 0, b0 = 0, b1 = 0) #a0 and b1 as average and range of trait !!
   #lm_M = lm(Tlevel1 ~ Tlevel2)
   #pars = c(a0 = lm_M$coefficients[1],a1 = lm_M$coefficients[2],b0 = sd(lm_M$residuals),b1 = 0)
   
   # Boundaries 
-  par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10)
+  par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10) #try different constrains, Here a1 is set to be positive.
   par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10)
   #Nacho comment: are those especific to the data ranges?
   
