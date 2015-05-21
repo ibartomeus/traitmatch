@@ -14,8 +14,8 @@ fit_it <- function(model, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1){
   
   # Boundaries 
   #par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10) #try different constrains, Here a1 is set to be positive.
-  par_lo = c(a0 = -1000, a1 = -1000, b0 = -100, b1 = -1000) #try different constrains, Here a1 is set to be positive.
-  par_hi = c(a0 = 100, a1 = 5000, b0 = 100, b1 = 1000)
+  par_lo = c(a0 = -1000, a1 = -5000, b0 = -1000, b1 = -1000) #try different constrains, Here a1 is set to be positive.
+  par_hi = c(a0 = 5000, a1 = 5000, b0 = 1000, b1 = 1000)
   #Nacho comment: are those especific to the data ranges?
   
   # Maximum likelihood estimation
