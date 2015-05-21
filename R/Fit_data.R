@@ -80,33 +80,46 @@ barplot(c(lh_model, lh_niche, lh_neutral))
 l2 <- c("Hervibory_bin", lh_model, lh_niche, lh_neutral)
 
 # Make frequentistic grasshoper data
-pars_grass_freq <- fit_it(integrated_model,
-                         Tlevel1 = grass$P.Leaf.dry.matter.content, 
-                         Tlevel2 = grass$G.Incisive.strength,
-                         mean_Tlevel1 = weighted.mean(grass$P.Leaf.dry.matter.content, grass$Herbivory),
-                         sd_Tlevel1 = weighted.sd(grass$P.Leaf.dry.matter.content, grass$Herbivory))
+head(grass)
+Incisive.strength <- c()
+for(i in 1:nrow(grass)){
+  temp <- rep(grass$G.Incisive.strength[i], round(grass$Herbivory[i]))
+  Incisive.strength <- c(Incisive.strength,temp)
+}
+Dry.matter <- c()
+for(i in 1:nrow(grass)){
+  temp <- rep(grass$P.Leaf.dry.matter.content[i], round(grass$Herbivory[i]))
+  Dry.matter <- c(Dry.matter,temp)
+}
 
-plot.pred(pars = pars_grass_freq, Tlevel1 = jitter(grass$P.Leaf.dry.matter.content), 
-          Tlevel2 = jitter(grass$G.Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
+#fit models
+pars_grass_freq <- fit_it(integrated_model,
+                         Tlevel1 = Dry.matter, 
+                         Tlevel2 = Incisive.strength,
+                         mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
+                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
+
+plot.pred(pars = pars_grass_freq, Tlevel1 = jitter(Dry.matter,100), 
+          Tlevel2 = jitter(Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
 #compare
 pars_grass_freq_niche <- fit_it(niche_model, 
-                                Tlevel1 = grass$P.Leaf.dry.matter.content, 
-                                Tlevel2 = grass$G.Incisive.strength,
-                                mean_Tlevel1 = weighted.mean(grass$P.Leaf.dry.matter.content, grass$Herbivory),
-                                sd_Tlevel1 = weighted.sd(grass$P.Leaf.dry.matter.content, grass$Herbivory))
+                                Tlevel1 = Dry.matter, 
+                                Tlevel2 = Incisive.strength,
+                                mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
+                                sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
 
-plot.pred(pars = pars_grass_freq_niche, Tlevel1 = grass$P.Leaf.dry.matter.content, 
-          Tlevel2 = grass$G.Incisive.strength, xlab = "Incisive strength", ylab = "Leaf dry matter content")
+plot.pred(pars = pars_grass_freq_niche, Tlevel1 = jitter(Dry.matter,100), 
+          Tlevel2 = jitter(Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
 #likelihoods
-lh_model <- -integrated_model(pars_grass_freq, grass$P.Leaf.dry.matter.content, grass$G.Incisive.strength, 
-                              weighted.mean(grass$P.Leaf.dry.matter.content, grass$Herbivory), 
-                              weighted.sd(grass$P.Leaf.dry.matter.content, grass$Herbivory))
-lh_niche <- -niche_model(pars_grass_freq_niche, grass$P.Leaf.dry.matter.content, grass$G.Incisive.strength, 
-                         weighted.mean(grass$P.Leaf.dry.matter.content, grass$Herbivory), 
-                         weighted.sd(grass$P.Leaf.dry.matter.content, grass$Herbivory))
-lh_neutral <- -neutral_model(grass$P.Leaf.dry.matter.content, grass$G.Incisive.strength, 
-                             weighted.mean(grass$P.Leaf.dry.matter.content, grass$Herbivory),
-                             weighted.sd(grass$P.Leaf.dry.matter.content, grass$Herbivory))
+lh_model <- -integrated_model(pars_grass_freq, Dry.matter, Incisive.strength, 
+                              mean(grass$P.Leaf.dry.matter.content), 
+                              sd(grass$P.Leaf.dry.matter.content))
+lh_niche <- -niche_model(pars_grass_freq_niche, Dry.matter, Incisive.strength, 
+                         mean(grass$P.Leaf.dry.matter.content), 
+                         sd(grass$P.Leaf.dry.matter.content))
+lh_neutral <- -neutral_model(Dry.matter, Incisive.strength, 
+                             mean(grass$P.Leaf.dry.matter.content),
+                             sd(grass$P.Leaf.dry.matter.content))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
 l3 <- c("Hervibory_freq", lh_model, lh_niche, lh_neutral)
@@ -114,34 +127,46 @@ l3 <- c("Hervibory_freq", lh_model, lh_niche, lh_neutral)
 #Host/para-------
 host = read.table("data/Tylianakis2008.txt", h = TRUE)
 head(host)
+host_body_length <- c()
+for(i in 1:nrow(host)){
+  temp <- rep(host$host_body_length[i], host$freq[i])
+  host_body_length <- c(host_body_length, temp)
+}
+parasite_body_length <- c()
+for(i in 1:nrow(host)){
+  temp <- rep(host$parasite_body_length[i], host$freq[i])
+  parasite_body_length <- c(parasite_body_length,temp)
+}
 
 #plot(host$parasite_body_length ~ host$host_body_length)
 
 pars_host <- fit_it(integrated_model,
-                        Tlevel1 = host$host_body_length, 
-                        Tlevel2 = host$parasite_body_length,
+                        Tlevel1 = host_body_length, 
+                        Tlevel2 = parasite_body_length,
                         mean_Tlevel1 = weighted.mean(host$host_body_length, host$freq),
                         sd_Tlevel1 = weighted.sd(host$host_body_length, host$freq))
+#check
+weighted.mean(host$host_body_length, host$freq) == mean(host_body_length)
 
-plot.pred(pars = pars_host, Tlevel1 = host$host_body_length, 
-          Tlevel2 = host$parasite_body_length, xlab = "Parasite body size", ylab = "Host body size")
+plot.pred(pars = pars_host, Tlevel1 = jitter(host_body_length), 
+          Tlevel2 = jitter(parasite_body_length), xlab = "Parasite body size", ylab = "Host body size")
 
 #compare
 pars_host_niche <- fit_it(niche_model,
-                    Tlevel1 = host$host_body_length, 
-                    Tlevel2 = host$parasite_body_length,
+                    Tlevel1 = host_body_length, 
+                    Tlevel2 = parasite_body_length,
                     mean_Tlevel1 = weighted.mean(host$host_body_length, host$freq),
                     sd_Tlevel1 = weighted.sd(host$host_body_length, host$freq))
 
-plot.pred(pars = pars_host_niche, Tlevel1 = host$host_body_length, 
-          Tlevel2 = host$parasite_body_length, xlab = "Parasite body size", ylab = "Host body size")
+plot.pred(pars = pars_host_niche, Tlevel1 = host_body_length, 
+          Tlevel2 = parasite_body_length, xlab = "Parasite body size", ylab = "Host body size")
 
 #likelihoods
-lh_model <- -integrated_model(pars_host, host$host_body_length, host$parasite_body_length, 
+lh_model <- -integrated_model(pars_host, host_body_length, parasite_body_length, 
                               weighted.mean(host$host_body_length, host$freq), weighted.sd(host$host_body_length, host$freq))
-lh_niche <- -niche_model(pars_host_niche, host$host_body_length, host$parasite_body_length, 
+lh_niche <- -niche_model(pars_host_niche, host_body_length, parasite_body_length, 
                          weighted.mean(host$host_body_length, host$freq), weighted.sd(host$host_body_length, host$freq))
-lh_neutral <- -neutral_model(host$host_body_length, host$parasite_body_length, 
+lh_neutral <- -neutral_model(host_body_length, parasite_body_length, 
                              weighted.mean(host$host_body_length, host$freq), weighted.sd(host$host_body_length, host$freq))
 
 barplot(c(lh_model, lh_niche, lh_neutral))
