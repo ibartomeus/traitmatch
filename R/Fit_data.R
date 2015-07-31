@@ -1,6 +1,6 @@
 #Run real data
 
-source('R/FitModel_SA.R')
+source('R/FitModel.R')
 
 # Load data for Pred/Prey
 #I DIDN'T UPLOAD THE DATA TO GIT BECAUSE THE REPO WILL GO OPEN EVENTUALLY AND I DON'T KNOW IF THIS DATA IS PUBLIC

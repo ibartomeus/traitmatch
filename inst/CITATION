@@ -1,0 +1,20 @@
+citHeader("To cite trait_match in publications use:")
+
+citEntry(entry = "Article",
+  title        = "A common framework for identifying linkage rules across different types of interactions",
+  author       = personList(as.person("Ignasi Bartomeus"),as.person("Dominique Gravel"),
+                   as.person("Jason M. Tylianakis3"), as.person("Marcelo A. Aizen"), 
+                    as.person("Ian A. Dickie"), as.person("Maud Bernard-Verdier")),
+  journal      = "Functional Ecology",
+  year         = "2015",
+  volume       = "",
+  number       = "",
+  pages        = "",
+  url          = "",
+
+  textVersion  =
+  paste("A common framework for identifying linkage rules across different types of interactions",
+        "2015",
+        "Bartomeus, Gravel, Tylianakis, Aizen, Dickie and Bernard-Verdier",
+        "Functional Ecology")
+)
