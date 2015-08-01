@@ -1,27 +1,24 @@
-#' @name integrated_model
+#' @name models
+#' @aliases integrated_model
+#' @aliases niche_model
+#' @aliases neutral_model
 #' 
-#' @title Bayesian model of species interactions based on traits, using observation of interactions only (presence)
+#' @title Bayesian models for characterizing trait-based species interactions.
 #' 
-#' @description .  
-#' 
-#' @param pars
-#' @param Tlevel1
-#' @param Tlevel2
-#' @param mean_Tlevel1
-#' @param sd_Tlevel1
-#' 
-#' @return x
-#'
-#' @examples x
+#' @description This models are described in Bartomeus at al. (2015 Functional Ecology) and are based
+#' on Williams et al. 2000 models. They are intended to be used with fit_it function. The integrated model 
+#' considers both neutral and niche constrains, while the neutral and niche models only consider its respective
+#' components.
 #' 
 #' @author
 #' Dominique Gravel
 #'  
 #' @references
-#' Williams et al 2010?
-#' 
-#' @export
-#' 
+#'Williams, R.J., Anandanadesan, A. & Purves, D. (2010) The probabilistic niche model reveals the niche structure and role of body size in a complex food web. PloS one, 5, e12092.
+#'Williams, R.J. & Martinez, N.D. (2000) Simple rules yield complex food webs. Nature, 404, 180–183.#' 
+#'
+#' @rdname models 
+#' @export 
 integrated_model = function(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	a0 = pars[1]
 	a1 = pars[2]
@@ -41,7 +38,7 @@ integrated_model = function(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	pML[pML<=0] = .Machine$double.xmin # Control to avoid computing issues
 	return(-sum(log(pML)))		
 }
-# Neutral model
+#' @export
 neutral_model = function(Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	# Compute the conditional
 	pLM = 1
@@ -54,7 +51,7 @@ neutral_model = function(Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	pML[pML<=0] = .Machine$double.xmin # Control to avoid computing issues
 	return(-sum(log(pML)))		
 }
-# Niche model
+#' @export
 niche_model = function(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	a0 = pars[1]
 	a1 = pars[2]

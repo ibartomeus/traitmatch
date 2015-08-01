@@ -1,4 +1,4 @@
-Package: trait_match
+Package: traitmatch
 Type: Package
 Title: Package to predict trait matching from species interactions
 Version: 0.1.0
