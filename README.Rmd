@@ -1,11 +1,10 @@
 ---
-title: "README"
+title: "traitmatch"
 author: "I. Bartomeus"
 date: "1 Aug 2015"
 output: html_document
 ---
-# traitmatch
-Package to predict trait matching from species interactions.
+# traitmatch: Package to predict trait matching from species interactions.
 
 This document reprodcue the analysis done in Bartomeus et al 2015 (Functional Ecology) as a way to show how it works.
 
@@ -13,8 +12,8 @@ To install the package run (only once):
 ```{r}
 install.packages("devtools") 
 require(devtools)
-install_github("fundiv", "ibartomeus")
-require(fundiv)
+install_github("traitmatch", "ibartomeus")
+require(traitmatch)
 
 ```
 
@@ -142,7 +141,7 @@ lh_neutral <- -neutral_model(grass$P.Leaf.dry.matter.content, grass$G.Incisive.s
                              mean(grass$P.Leaf.dry.matter.content), 
                              sd(grass$P.Leaf.dry.matter.content))
 
-barplot(c(lh_model, lh_niche, lh_neutral))
+barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", "neutral"))
 l2 <- c("Hervibory_bin", lh_model, lh_niche, lh_neutral)
 #here the integrated is as good as the neutral model.
 
@@ -191,7 +190,7 @@ lh_neutral <- -neutral_model(Dry.matter, Incisive.strength,
                              mean(grass$P.Leaf.dry.matter.content),
                              sd(grass$P.Leaf.dry.matter.content))
 
-barplot(c(lh_model, lh_niche, lh_neutral))
+barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", "neutral"))
 l3 <- c("Hervibory_freq", lh_model, lh_niche, lh_neutral)
 ```
 
@@ -248,7 +247,7 @@ lh_neutral <- -neutral_model(pols$nectar_holder_depth_mm, log(pols$tongue),
                              weighted_mean(plants$nectar_holder_depth_mm, plants$cover),
                              weighted_sd(plants$nectar_holder_depth_mm, plants$cover))
 
-barplot(c(lh_model, lh_niche, lh_neutral))
+barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", "neutral"))
 l5 <- c("Pollintion", lh_model, lh_niche, lh_neutral)
 ```
 
@@ -306,7 +305,7 @@ lh_neutral <- -neutral_model(host_body_length, parasite_body_length,
                              weighted_mean(host$host_body_length, host$freq), 
                              weighted_sd(host$host_body_length, host$freq))
 
-barplot(c(lh_model, lh_niche, lh_neutral))
+barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", "neutral"))
 l4 <- c("Parasitsim", lh_model, lh_niche, lh_neutral)
 
 ```
