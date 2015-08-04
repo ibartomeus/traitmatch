@@ -1,350 +1,347 @@
-"plant" "nectar_holder_depth_mm" "pollinator" "IT_mm"
-"1" "Aetheorhiza_bulbosa" 2 "Nomada_sp" 1.57
-"2" "Aetheorhiza_bulbosa" 2 "Lasioglossum_sp" 1.36
-"3" "Aetheorhiza_bulbosa" 2 "Lasioglossum_gemmeus" 1.33
-"4" "Aetheorhiza_bulbosa" 2 "Andrena_cinerea" 2.22
-"5" "Aetheorhiza_bulbosa" 2 "Andrena_cinerea" 2.15
-"6" "Allium_ampeloprasum" 1 "Halictus_sp" 1.15
-"7" "Allium_ampeloprasum" 1 "Halictus_sp" 1.76
-"8" "Allium_ampeloprasum" 1 "Lasioglossum_sp" 1.31
-"9" "Allium_ampeloprasum" 1 "Halictus_pyrenaicus" 1.83
-"10" "Allium_ampeloprasum" 1 "Lasioglossum_smaragdulus??" 1.26
-"11" "Allium_ampeloprasum" 1 "Megachile_pilicrus" 2.35
-"12" "Alyssum_maritimum" 2.5 "Andrena_sp" 1.84
-"13" "Alyssum_maritimum" 2.5 "Andrena_sp" 1.3
-"14" "Brassica_fruticulosa" 7 "Colletes_sp" 2.13
-"15" "Carpobrotus_aff.acinaciformis" 0 "Bombus_terrestris" 4.85
-"16" "Carpobrotus_aff.acinaciformis" 0 "Osmia_cornuta" 2.58
-"17" "Carpobrotus_aff.acinaciformis" 0 "Xylocopa_iris" 3.62
-"18" "Carpobrotus_aff.acinaciformis" 0 "Osmia_aurulenta" 2.75
-"19" "Carpobrotus_aff.acinaciformis" 0 "Andrena_sp" 2.14
-"20" "Carpobrotus_aff.acinaciformis" 0 "Halictus_pyrenaicus" 2.33
-"21" "Carpobrotus_aff.acinaciformis" 0 "Andrena_sp" 1.87
-"22" "Carpobrotus_aff.acinaciformis" 0 "Anthidium_septemspinosum" 3.29
-"23" "Carpobrotus_aff.acinaciformis" 0 "Halictus_pyrenaicus" 2.39
-"24" "Carpobrotus_aff.acinaciformis" 0 "Anthidium_sticticum" 3.64
-"25" "Carpobrotus_aff.acinaciformis" 0 "Osmia_aurulenta" 2.55
-"26" "Carpobrotus_aff.acinaciformis" 0 "Eucera_collaris" 3.2
-"27" "Carpobrotus_aff.acinaciformis" 0 "Bombus_terrestris" 4.39
-"28" "Carpobrotus_aff.acinaciformis" 0 "Apis_mellifera" 2.9
-"29" "Carpobrotus_aff.acinaciformis" 0 "Apis_mellifera" 2.74
-"30" "Carpobrotus_aff.acinaciformis" 0 "Lasioglossum_sp" 1.55
-"31" "Carpobrotus_aff.acinaciformis" 0 "Halictus??_sp" 2.32
-"32" "Carpobrotus_aff.acinaciformis" 0 "Andrena_sp" 1.69
-"33" "Carpobrotus_aff.acinaciformis" 0 "Dasypoda_cingulata" 2.51
-"34" "Carpobrotus_aff.acinaciformis" 0 "Osmia_aurulenta" 2.04
-"35" "Carpobrotus_aff.acinaciformis" 0 "Halictus_pyrenaicus" 2.31
-"36" "Carpobrotus_aff.acinaciformis" 0 "Lasioglossum_sp" 1.44
-"37" "Carpobrotus_aff.acinaciformis" 0 "Anthidium_sticticum" 3.58
-"38" "Carpobrotus_aff.acinaciformis" 0 "Bombus_terrestris" 4.02
-"39" "Cistus_albidus" 0 "Bombus_terrestris" 4.28
-"40" "Cistus_albidus" 0 "Osmia_sp" 4.07
-"41" "Cistus_albidus" 0 "Andrena??_sp" 1.62
-"42" "Cistus_albidus" 0 "Anthidium_sticticum" 3.38
-"43" "Cistus_albidus" 0 "Lasioglossum_sp" 1.72
-"44" "Cistus_albidus" 0 "Andrena_sp" 2.11
-"45" "Cistus_albidus" 0 "Andrena_sp" 2.12
-"46" "Cistus_albidus" 0 "Osmia_cornuta" 2.81
-"47" "Cistus_albidus" 0 "Andrena_nigrocianea??" 2.62
-"48" "Cistus_albidus" 0 "Anthidium_stictium" 3.75
-"49" "Cistus_monspeliensis" 0 "Andrena_nigrocianea??" 2.39
-"50" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.75
-"51" "Cistus_monspeliensis" 0 "Andrena_nigrocianea??" 2.69
-"52" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.75
-"53" "Cistus_monspeliensis" 0 "Andrena_sp" 1.24
-"54" "Cistus_monspeliensis" 0 "Andrena_sp" 1.46
-"55" "Cistus_monspeliensis" 0 "Eumenes_sp" 2.09
-"56" "Cistus_monspeliensis" 0 "Andrena_sp" 1.63
-"57" "Cistus_monspeliensis" 0 "Hylaeus_sp" 0.91
-"58" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.67
-"59" "Cistus_monspeliensis" 0 "Andrena_sp" 2.19
-"60" "Cistus_monspeliensis" 0 "Halictus_pyrenaicus??" 2.09
-"61" "Cistus_monspeliensis" 0 "Andrena_sp" 2.11
-"62" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.6
-"63" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.45
-"64" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 0.88
-"65" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.64
-"66" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.18
-"67" "Cistus_monspeliensis" 0 "Andrena_sp" 1.87
-"68" "Cistus_monspeliensis" 0 "Prosopis(Hylaeus)_variegatus" 1.27
-"69" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.7
-"70" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.36
-"71" "Cistus_monspeliensis" 0 "Andrena_nigrocianea??" 2.38
-"72" "Cistus_monspeliensis" 0 "Sphecodes_sp" 1.69
-"73" "Cistus_monspeliensis" 0 "Panurgus_sp" 1.59
-"74" "Cistus_salvifolius" 0 "Andrena_sp" 1.33
-"75" "Cistus_salvifolius" 0 "Andrena_sp" 1.39
-"76" "Cistus_salvifolius" 0 "Andrena_sp" 2.05
-"77" "Cistus_salvifolius" 0 "Andrena_sp" 1.37
-"78" "Cistus_salvifolius" 0 "Hoplitis_sp" 2.58
-"79" "Cistus_salvifolius" 0 "Andrena_sp" 1.55
-"80" "Cistus_salvifolius" 0 "Andrena_sp" 1.32
-"81" "Cistus_salvifolius" 0 "Andrena_sp" 2.18
-"82" "Cistus_salvifolius" 0 "Andrena_sp" 1.89
-"83" "Cistus_salvifolius" 0 "Halictus_sp" 1.08
-"84" "Cistus_salvifolius" 0 "Andrena_sp" 2.17
-"85" "Cistus_salvifolius" 0 "Andrena_sp" 1.87
-"86" "Cistus_salvifolius" 0 "Andrena_sp" 1.89
-"87" "Cistus_salvifolius" 0 "Halictus_pyrenaicus" 2.38
-"88" "Cistus_salvifolius" 0 "Halictus_smaragdulus??" 1.76
-"89" "Convolvulus_althaeoides" 4.92 "Andrena_sp" 1.35
-"90" "Convolvulus_althaeoides" 4.92 "Lasioglossum_sp" 1.24
-"91" "Convolvulus_althaeoides" 4.92 "Lasioglossum_sp" 0.98
-"92" "Convolvulus_althaeoides" 4.92 "Lasioglossum_gemmeus" 1.15
-"93" "Daucus_carota_carota" 0.5 "Lasioglossum_gemmeus" 1.16
-"94" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.39
-"95" "Daucus_carota_carota" 0.5 "Hylaeus_variegatus" 0.89
-"96" "Daucus_carota_carota" 0.5 "Prosopis(Hylaeus)_sp" 1.27
-"97" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.17
-"98" "Daucus_carota_carota" 0.5 "Halictus_sp" 1.04
-"99" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.41
-"100" "Daucus_carota_carota" 0.5 "Lasioglossum_gemmeus" 1.24
-"101" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.26
-"102" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.35
-"103" "Daucus_carota_carota" 0.5 "Hylaeus_nigritus" 1.14
-"104" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.3
-"105" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.22
-"106" "Daucus_carota_carota" 0.5 "Andrena_sp" 1.19
-"107" "Daucus_carota_carota" 0.5 "Halictus_sp" 1.21
-"108" "Daucus_carota_carota" 0.5 "Halictus_gemmeus" 1.22
-"109" "Daucus_carota_carota" 0.5 "Prosopis(Hylaeus)_variegatus" 1.31
-"110" "Daucus_carota_carota" 0.5 "Hylaeus_bisinuatus" 0.88
-"111" "Daucus_carota_carota" 0.5 "Apis_mellifera" 2.89
-"112" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.32
-"113" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 0.88
-"114" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.32
-"115" "Daucus_carota_carota" 0.5 "Lasioglossum_smaragdulus??" 1.28
-"116" "Daucus_carota_carota" 0.5 "Lasioglossum_smaragdulus??" 1.22
-"117" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 0.78
-"118" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.3
-"119" "Daucus_carota_carota" 0.5 "Halictus_sp" 1.3
-"120" "Dianthus_caryophillus" 29 "Lasioglossum_smaragdulus??" 1.16
-"121" "Dianthus_caryophillus" 29 "Lasioglossum_sp" 1.25
-"122" "Dianthus_caryophillus" 29 "Lasioglossum_sp" 1.2
-"123" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.53
-"124" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.98
-"125" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 2.28
-"126" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 2
-"127" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.88
-"128" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.87
-"129" "Echium_sabulicola" 9 "Lasioglossum_sp" 0.9
-"130" "Echium_sabulicola" 9 "Ceratina_dentiventris" 1.09
-"131" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.87
-"132" "Eryngium_campestre" 2 "Andrena_carbonaria?" 3.05
-"133" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.24
-"134" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.4
-"135" "Eryngium_campestre" 2 "Lasioglossum_gemmeus" 1.11
-"136" "Eryngium_campestre" 2 "Lasioglossum_sp" 1
-"137" "Eryngium_campestre" 2 "Epeolus_variegatus" 1.99
-"138" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.03
-"139" "Eryngium_campestre" 2 "Colletes_sp" 2.22
-"140" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.31
-"141" "Eryngium_campestre" 2 "Hylaeus_variegatus" 1.36
-"142" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.93
-"143" "Eryngium_campestre" 2 "Lasioglossum_gemmeus" 1.04
-"144" "Eryngium_campestre" 2 "Halictus_sp" 1.03
-"145" "Eryngium_campestre" 2 "Hylaeus_nigritum" 0.94
-"146" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.09
-"147" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.85
-"148" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.03
-"149" "Eryngium_campestre" 2 "Hylaeus_nigritum" 1.02
-"150" "Eryngium_campestre" 2 "Halictus_sp" 1.24
-"151" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.29
-"152" "Eryngium_campestre" 2 "Halictus_sp" 1.25
-"153" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.43
-"154" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.85
-"155" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.2
-"156" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.33
-"157" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.16
-"158" "Eryngium_campestre" 2 "Philanthus_pulchellus" 1.23
-"159" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.11
-"160" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.99
-"161" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.2
-"162" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.97
-"163" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.33
-"164" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.01
-"165" "Eryngium_campestre" 2 "Lasioglossum_gemmeus" 1.23
-"166" "Eryngium_campestre" 2 "_" 1.33
-"167" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.6
-"168" "Eryngium_campestre" 2 "Andrena_sp" 1.45
-"169" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.31
-"170" "Eryngium_campestre" 2 "Halictus_gemmeus" 1.26
-"171" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.15
-"172" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.16
-"173" "Galactites_tomentosa" 10 "Andrena_sp" 1.38
-"174" "Galactites_tomentosa" 10 "Andrena_sp" 1.35
-"175" "Galactites_tomentosa" 10 "Halictus_quadricinctus" 2.72
-"176" "Galactites_tomentosa" 10 "Hoplitis_sp" 2.39
-"177" "Galactites_tomentosa" 10 "Hoplitis??_sp" 2.49
-"178" "Galactites_tomentosa" 10 "Hoplitis_sp" 2.89
-"179" "Galactites_tomentosa" 10 "Anthidium_septemspinosum" 3.47
-"180" "Galactites_tomentosa" 10 "Hoplitis??_sp" 2.45
-"181" "Lavandula_stoechas" 4 "Halictus_pyrenaicus" 2.31
-"182" "Lavandula_stoechas" 4 "Panurgus_sp" 1.58
-"183" "Lavandula_stoechas" 4 "Megachile??_sp" 2.64
-"184" "Lavandula_stoechas" 4 "Apis_mellifera" 2.67
-"185" "Lavandula_stoechas" 4 "Halictus_pyrenaicus" 2.41
-"186" "Lavandula_stoechas" 4 "Osmia_aurulenta" 2.39
-"187" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4
-"188" "Lavandula_stoechas" 4 "Eucera_sp" 3.25
-"189" "Lavandula_stoechas" 4 "Andrena_sp" 2.43
-"190" "Lavandula_stoechas" 4 "Apis_mellifera" 2.82
-"191" "Lavandula_stoechas" 4 "Osmia_sp" 2.67
-"192" "Lavandula_stoechas" 4 "Osmia_aurulenta" 2.5
-"193" "Lavandula_stoechas" 4 "Lasioglossum_sp" 1.64
-"194" "Lavandula_stoechas" 4 "Andrena_sp" 1.75
-"195" "Lavandula_stoechas" 4 "Anthophora_sp" 4.05
-"196" "Lavandula_stoechas" 4 "Anthophora_plumipes" 3.27
-"197" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.53
-"198" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4.56
-"199" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.52
-"200" "Lavandula_stoechas" 4 "Lasioglossum_sp" 1.75
-"201" "Lavandula_stoechas" 4 "Halictus_pyrenaicus" 2.26
-"202" "Lavandula_stoechas" 4 "Anthidium_septemspinosum" 3.8
-"203" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.37
-"204" "Lavandula_stoechas" 4 "Lasioglossum_sp" 1.48
-"205" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4.04
-"206" "Lavandula_stoechas" 4 "Apis_mellifera" 2.84
-"207" "Lavandula_stoechas" 4 "Anthophora_plumipes" 4.28
-"208" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.59
-"209" "Lavandula_stoechas" 4 "Anthophora_plumipes" 4.13
-"210" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4.24
-"211" "Linum_sp" 2.12 "Hoplitis_sp" 2.69
-"212" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.39
-"213" "Opuntia_stricta" 0 "Bombus_sp" 3.83
-"214" "Opuntia_stricta" 0 "Anthidium_septemspinosum" 3.27
-"215" "Opuntia_stricta" 0 "Apis_mellifera" 2.68
-"216" "Opuntia_stricta" 0 "Apis_mellifera" 2.56
-"217" "Opuntia_stricta" 0 "Apis_mellifera" 2.71
-"218" "Opuntia_stricta" 0 "Apis_mellifera" 2.53
-"219" "Opuntia_stricta" 0 "Xylocopa_sp" 7.04
-"220" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.16
-"221" "Opuntia_stricta" 0 "Xylocopa_sp" 6.92
-"222" "Opuntia_stricta" 0 "Halictus_pyrenaicus" 2.12
-"223" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.12
-"224" "Opuntia_stricta" 0 "Halictus_pyrenaicus" 1.92
-"225" "Opuntia_stricta" 0 "Apis_mellifera" 2.83
-"226" "Opuntia_stricta" 0 "Apis_mellifera" 1.55
-"227" "Opuntia_stricta" 0 "Apis_mellifera" 2.61
-"228" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.49
-"229" "Opuntia_stricta" 0 "Ceratina_cucurbitina" 1.3
-"230" "Opuntia_stricta" 0 "Apis_mellifera" 2.69
-"231" "Psoralea_bituminosa" 6.36 "Anthidium_septemspinosum" 3.45
-"232" "Psoralea_bituminosa" 6.36 "Lasioglossum_sp" 1.13
-"233" "Rosmarinus_officinalis" 5.21 "Colletes_sp" 2.07
-"234" "Rosmarinus_officinalis" 5.21 "Anthophora_plumipes" 3.34
-"235" "Rosmarinus_officinalis" 5.21 "Andrena_sp" 2.2
-"236" "Rosmarinus_officinalis" 5.21 "Nomada_succincta" 1.91
-"237" "Rosmarinus_officinalis" 5.21 "Lasioglossum_sp" 1.61
-"238" "Rosmarinus_officinalis" 5.21 "Apis_mellifera" 2.75
-"239" "Ruta_chalepensis" 0 "Lasioglossum_gemmeus" 1.14
-"240" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.42
-"241" "Ruta_chalepensis" 0 "Hylaeus_nigritus" 0.99
-"242" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.32
-"243" "Ruta_chalepensis" 0 "Halictus_sp" 1.2
-"244" "Ruta_chalepensis" 0 "Hylaeus_nigritus" 0.81
-"245" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.36
-"246" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.15
-"247" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.32
-"248" "Scabiosa_stellata" 6 "Lasioglossum_sp" 1.3
-"249" "Scabiosa_stellata" 6 "Halictus_sp" 2.26
-"250" "Scabiosa_stellata" 6 "Ceratina_cucurbitina" 1.28
-"251" "Scabiosa_stellata" 6 "Halictus_sp" 2.15
-"252" "Sedum_sediforme" 0 "Colletes_sp" 1.92
-"253" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.41
-"254" "Sedum_sediforme" 0 "Halictus_sp" 1.53
-"255" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.2
-"256" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.26
-"257" "Sedum_sediforme" 0 "Halictus_sp" 1.28
-"258" "Sedum_sediforme" 0 "Megachile_sp" 2.18
-"259" "Sedum_sediforme" 0 "Colletes_sp" 2.55
-"260" "Sedum_sediforme" 0 "Anthidium_sp" 3.3
-"261" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.29
-"262" "Sedum_sediforme" 0 "Halictus_sp" 1.33
-"263" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.25
-"264" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.25
-"265" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.02
-"266" "Sedum_sediforme" 0 "Halictus_pyrenaicus" 1.83
-"267" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.31
-"268" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.34
-"269" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.34
-"270" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.34
-"271" "Sedum_sediforme" 0 "Halictus_sp" 1.34
-"272" "Sedum_sediforme" 0 "Halictus_sp" 1.88
-"273" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.41
-"274" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.46
-"275" "Sedum_sediforme" 0 "Lasioglossum_smaragdulus??" 1.39
-"276" "Sedum_sediforme" 0 "Lasioglossum_smaragdulus??" 1.24
-"277" "Sedum_sediforme" 0 "Halictus_sp" 1.12
-"278" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.96
-"279" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.19
-"280" "Sedum_sediforme" 0 "Halictus_sp" 1.92
-"281" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.66
-"282" "Sonchus_tenerrinus" 1.08 "Halictus_pyrenaicus" 1.96
-"283" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2.24
-"284" "Sonchus_tenerrinus" 1.08 "Halictus_sp" 1.15
-"285" "Sonchus_tenerrinus" 1.08 "Halictus_sp" 1.31
-"286" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.75
-"287" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.49
-"288" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.39
-"289" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2
-"290" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.33
-"291" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.36
-"292" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 0.93
-"293" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 2.1
-"294" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.5
-"295" "Sonchus_tenerrinus" 1.08 "Lasioglossum??_sp" 1.47
-"296" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.51
-"297" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.14
-"298" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.46
-"299" "Sonchus_tenerrinus" 1.08 "Prosopis(Hylaeus)_sp??" 1.04
-"300" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.9
-"301" "Sonchus_tenerrinus" 1.08 "Hoplitis_sp" 1.86
-"302" "Sonchus_tenerrinus" 1.08 "Hoplitis_sp" 1.88
-"303" "Sonchus_tenerrinus" 1.08 "Hylaeus_sp" 0.99
-"304" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.76
-"305" "Sonchus_tenerrinus" 1.08 "Nomada_sp" 0.96
-"306" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2.35
-"307" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.56
-"308" "Sonchus_tenerrinus" 1.08 "Halictus_pyrenaicus" 2.14
-"309" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.59
-"310" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.03
-"311" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.59
-"312" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.72
-"313" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.07
-"314" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.63
-"315" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2.17
-"316" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.71
-"317" "Sonchus_tenerrinus" 1.08 "Hylaeus_sp" 1.04
-"318" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.62
-"319" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.27
-"320" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 0.92
-"321" "Sonchus_tenerrinus" 1.08 "Nomada_sp" 1.26
-"322" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.54
-"323" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.38
-"324" "Sonchus_tenerrinus" 1.08 "Andrena_ovatula" 1.89
-"325" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.35
-"326" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.7
-"327" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.91
-"328" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.34
-"329" "Sonchus_tenerrinus" 1.08 "Halictus_pyrenaicus" 2.08
-"330" "Sonchus_tenerrinus" 1.08 "Lasioglossum??_sp" 1.56
-"331" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.83
-"332" "Sonchus_tenerrinus" 1.08 "Colletes_sp" 1.82
-"333" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.37
-"334" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1
-"335" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.26
-"336" "Thymelaea_hirusta" 1 "Lasioglossum_sp" 1.39
-"337" "Thymelaea_hirusta" 1 "Andrena_agilissima" 2.7
-"338" "Thymelaea_hirusta" 1 "Bombus_terrestris" 6.58
-"339" "Thymelaea_hirusta" 1 "Apis_mellifera" 2.68
-"340" "Thymelaea_hirusta" 1 "Andrena_agilissima" 2.31
-"341" "Urospermum_picroides" 1 "Panurgus_sp" 1.49
-"342" "Urospermum_picroides" 1 "Panurgus_banksianus" 2.34
-"343" "Urospermum_picroides" 1 "Andrena_cinerea" 2.22
-"344" "Urospermum_picroides" 1 "Halictus_pyrenaicus" 2.28
-"345" "Urospermum_picroides" 1 "Panurgus_sp" 1.35
-"346" "Urospermum_picroides" 1 "Panurgus_sp" 1.65
-"347" "Urospermum_picroides" 1 "Panurgus_sp" 1.67
-"348" "Urospermum_picroides" 1 "Panurgus_sp" 1.6
-"349" "Urospermum_picroides" 1 "Panurgus_banksianus" 2.07
+"plant" "nectar_holder_depth_mm" "pollinator" "IT_mm" "family" "cover"
+"1" "Aetheorhiza_bulbosa" 2 "Nomada_sp" 1.57 "Apidae" 2.29166666666667
+"2" "Aetheorhiza_bulbosa" 2 "Lasioglossum_sp" 1.36 "Halictidae" 2.29166666666667
+"3" "Aetheorhiza_bulbosa" 2 "Lasioglossum_gemmeus" 1.33 "Halictidae" 2.29166666666667
+"4" "Aetheorhiza_bulbosa" 2 "Andrena_cinerea" 2.22 "Andrenidae" 2.29166666666667
+"5" "Aetheorhiza_bulbosa" 2 "Andrena_cinerea" 2.15 "Andrenidae" 2.29166666666667
+"6" "Allium_ampeloprasum" 1 "Halictus_sp" 1.15 "Halictidae" 0.0416666666666667
+"7" "Allium_ampeloprasum" 1 "Halictus_sp" 1.76 "Halictidae" 0.0416666666666667
+"8" "Allium_ampeloprasum" 1 "Lasioglossum_sp" 1.31 "Halictidae" 0.0416666666666667
+"9" "Allium_ampeloprasum" 1 "Halictus_pyrenaicus" 1.83 "Halictidae" 0.0416666666666667
+"10" "Allium_ampeloprasum" 1 "Lasioglossum_smaragdulus??" 1.26 "Halictidae" 0.0416666666666667
+"11" "Allium_ampeloprasum" 1 "Megachile_pilicrus" 2.35 "Megachilidae" 0.0416666666666667
+"12" "Alyssum_maritimum" 2.5 "Andrena_sp" 1.84 "Andrenidae" 0.291666666666667
+"13" "Alyssum_maritimum" 2.5 "Andrena_sp" 1.3 "Andrenidae" 0.291666666666667
+"14" "Brassica_fruticulosa" 7 "Colletes_sp" 2.13 "Colletidae" 0.0416666666666667
+"15" "Carpobrotus_aff.acinaciformis" 0 "Bombus_terrestris" 4.85 "Apidae" 9.25
+"16" "Carpobrotus_aff.acinaciformis" 0 "Osmia_cornuta" 2.58 "Megachilidae" 9.25
+"17" "Carpobrotus_aff.acinaciformis" 0 "Xylocopa_iris" 3.62 "Apidae" 9.25
+"18" "Carpobrotus_aff.acinaciformis" 0 "Osmia_aurulenta" 2.75 "Megachilidae" 9.25
+"19" "Carpobrotus_aff.acinaciformis" 0 "Andrena_sp" 2.14 "Andrenidae" 9.25
+"20" "Carpobrotus_aff.acinaciformis" 0 "Halictus_pyrenaicus" 2.33 "Halictidae" 9.25
+"21" "Carpobrotus_aff.acinaciformis" 0 "Andrena_sp" 1.87 "Andrenidae" 9.25
+"22" "Carpobrotus_aff.acinaciformis" 0 "Anthidium_septemspinosum" 3.29 "Megachilidae" 9.25
+"23" "Carpobrotus_aff.acinaciformis" 0 "Halictus_pyrenaicus" 2.39 "Halictidae" 9.25
+"24" "Carpobrotus_aff.acinaciformis" 0 "Anthidium_sticticum" 3.64 "Megachilidae" 9.25
+"25" "Carpobrotus_aff.acinaciformis" 0 "Osmia_aurulenta" 2.55 "Megachilidae" 9.25
+"26" "Carpobrotus_aff.acinaciformis" 0 "Eucera_collaris" 3.2 "Apidae" 9.25
+"27" "Carpobrotus_aff.acinaciformis" 0 "Bombus_terrestris" 4.39 "Apidae" 9.25
+"28" "Carpobrotus_aff.acinaciformis" 0 "Apis_mellifera" 2.9 "Apidae" 9.25
+"29" "Carpobrotus_aff.acinaciformis" 0 "Apis_mellifera" 2.74 "Apidae" 9.25
+"30" "Carpobrotus_aff.acinaciformis" 0 "Lasioglossum_sp" 1.55 "Halictidae" 9.25
+"31" "Carpobrotus_aff.acinaciformis" 0 "Halictus??_sp" 2.32 "Halictidae" 9.25
+"32" "Carpobrotus_aff.acinaciformis" 0 "Andrena_sp" 1.69 "Andrenidae" 9.25
+"33" "Carpobrotus_aff.acinaciformis" 0 "Dasypoda_cingulata" 2.51 "Andrenidae" 9.25
+"34" "Carpobrotus_aff.acinaciformis" 0 "Osmia_aurulenta" 2.04 "Megachilidae" 9.25
+"35" "Carpobrotus_aff.acinaciformis" 0 "Halictus_pyrenaicus" 2.31 "Halictidae" 9.25
+"36" "Carpobrotus_aff.acinaciformis" 0 "Lasioglossum_sp" 1.44 "Halictidae" 9.25
+"37" "Carpobrotus_aff.acinaciformis" 0 "Anthidium_sticticum" 3.58 "Megachilidae" 9.25
+"38" "Carpobrotus_aff.acinaciformis" 0 "Bombus_terrestris" 4.02 "Apidae" 9.25
+"39" "Cistus_albidus" 0 "Bombus_terrestris" 4.28 "Apidae" 1.16666666666667
+"40" "Cistus_albidus" 0 "Osmia_sp" 4.07 "Megachilidae" 1.16666666666667
+"41" "Cistus_albidus" 0 "Andrena??_sp" 1.62 "Andrenidae" 1.16666666666667
+"42" "Cistus_albidus" 0 "Anthidium_sticticum" 3.38 "Megachilidae" 1.16666666666667
+"43" "Cistus_albidus" 0 "Lasioglossum_sp" 1.72 "Halictidae" 1.16666666666667
+"44" "Cistus_albidus" 0 "Andrena_sp" 2.11 "Andrenidae" 1.16666666666667
+"45" "Cistus_albidus" 0 "Andrena_sp" 2.12 "Andrenidae" 1.16666666666667
+"46" "Cistus_albidus" 0 "Osmia_cornuta" 2.81 "Megachilidae" 1.16666666666667
+"47" "Cistus_albidus" 0 "Andrena_nigrocianea??" 2.62 "Andrenidae" 1.16666666666667
+"48" "Cistus_albidus" 0 "Anthidium_stictium" 3.75 "Megachilidae" 1.16666666666667
+"49" "Cistus_monspeliensis" 0 "Andrena_nigrocianea??" 2.39 "Andrenidae" 3.54166666666667
+"50" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.75 "Halictidae" 3.54166666666667
+"51" "Cistus_monspeliensis" 0 "Andrena_nigrocianea??" 2.69 "Andrenidae" 3.54166666666667
+"52" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.75 "Halictidae" 3.54166666666667
+"53" "Cistus_monspeliensis" 0 "Andrena_sp" 1.24 "Andrenidae" 3.54166666666667
+"54" "Cistus_monspeliensis" 0 "Andrena_sp" 1.46 "Andrenidae" 3.54166666666667
+"55" "Cistus_monspeliensis" 0 "Eumenes_sp" 2.09 "Apidae" 3.54166666666667
+"56" "Cistus_monspeliensis" 0 "Andrena_sp" 1.63 "Andrenidae" 3.54166666666667
+"57" "Cistus_monspeliensis" 0 "Hylaeus_sp" 0.91 "Colletidae" 3.54166666666667
+"58" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.67 "Halictidae" 3.54166666666667
+"59" "Cistus_monspeliensis" 0 "Andrena_sp" 2.19 "Andrenidae" 3.54166666666667
+"60" "Cistus_monspeliensis" 0 "Halictus_pyrenaicus??" 2.09 "Halictidae" 3.54166666666667
+"61" "Cistus_monspeliensis" 0 "Andrena_sp" 2.11 "Andrenidae" 3.54166666666667
+"62" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.6 "Halictidae" 3.54166666666667
+"63" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.45 "Halictidae" 3.54166666666667
+"64" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 0.88 "Halictidae" 3.54166666666667
+"65" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.64 "Halictidae" 3.54166666666667
+"66" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.18 "Halictidae" 3.54166666666667
+"67" "Cistus_monspeliensis" 0 "Andrena_sp" 1.87 "Andrenidae" 3.54166666666667
+"68" "Cistus_monspeliensis" 0 "Prosopis(Hylaeus)_variegatus" 1.27 "Halictidae" 3.54166666666667
+"69" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.7 "Halictidae" 3.54166666666667
+"70" "Cistus_monspeliensis" 0 "Lasioglossum_sp" 1.36 "Halictidae" 3.54166666666667
+"71" "Cistus_monspeliensis" 0 "Andrena_nigrocianea??" 2.38 "Andrenidae" 3.54166666666667
+"72" "Cistus_monspeliensis" 0 "Sphecodes_sp" 1.69 "Halictidae" 3.54166666666667
+"73" "Cistus_monspeliensis" 0 "Panurgus_sp" 1.59 "Andrenidae" 3.54166666666667
+"74" "Cistus_salvifolius" 0 "Andrena_sp" 1.33 "Andrenidae" 4.20833333333333
+"75" "Cistus_salvifolius" 0 "Andrena_sp" 1.39 "Andrenidae" 4.20833333333333
+"76" "Cistus_salvifolius" 0 "Andrena_sp" 2.05 "Andrenidae" 4.20833333333333
+"77" "Cistus_salvifolius" 0 "Andrena_sp" 1.37 "Andrenidae" 4.20833333333333
+"78" "Cistus_salvifolius" 0 "Hoplitis_sp" 2.58 "Megachilidae" 4.20833333333333
+"79" "Cistus_salvifolius" 0 "Andrena_sp" 1.55 "Andrenidae" 4.20833333333333
+"80" "Cistus_salvifolius" 0 "Andrena_sp" 1.32 "Andrenidae" 4.20833333333333
+"81" "Cistus_salvifolius" 0 "Andrena_sp" 2.18 "Andrenidae" 4.20833333333333
+"82" "Cistus_salvifolius" 0 "Andrena_sp" 1.89 "Andrenidae" 4.20833333333333
+"83" "Cistus_salvifolius" 0 "Halictus_sp" 1.08 "Halictidae" 4.20833333333333
+"84" "Cistus_salvifolius" 0 "Andrena_sp" 2.17 "Andrenidae" 4.20833333333333
+"85" "Cistus_salvifolius" 0 "Andrena_sp" 1.87 "Andrenidae" 4.20833333333333
+"86" "Cistus_salvifolius" 0 "Andrena_sp" 1.89 "Andrenidae" 4.20833333333333
+"87" "Cistus_salvifolius" 0 "Halictus_pyrenaicus" 2.38 "Halictidae" 4.20833333333333
+"88" "Cistus_salvifolius" 0 "Halictus_smaragdulus??" 1.76 "Halictidae" 4.20833333333333
+"89" "Convolvulus_althaeoides" 4.92 "Andrena_sp" 1.35 "Andrenidae" 0.916666666666667
+"90" "Convolvulus_althaeoides" 4.92 "Lasioglossum_sp" 1.24 "Halictidae" 0.916666666666667
+"91" "Convolvulus_althaeoides" 4.92 "Lasioglossum_sp" 0.98 "Halictidae" 0.916666666666667
+"92" "Convolvulus_althaeoides" 4.92 "Lasioglossum_gemmeus" 1.15 "Halictidae" 0.916666666666667
+"93" "Daucus_carota_carota" 0.5 "Lasioglossum_gemmeus" 1.16 "Halictidae" 5.29166666666667
+"94" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.39 "Halictidae" 5.29166666666667
+"95" "Daucus_carota_carota" 0.5 "Hylaeus_variegatus" 0.89 "Halictidae" 5.29166666666667
+"96" "Daucus_carota_carota" 0.5 "Prosopis(Hylaeus)_sp" 1.27 "Colletidae" 5.29166666666667
+"97" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.17 "Halictidae" 5.29166666666667
+"98" "Daucus_carota_carota" 0.5 "Halictus_sp" 1.04 "Halictidae" 5.29166666666667
+"99" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.41 "Halictidae" 5.29166666666667
+"100" "Daucus_carota_carota" 0.5 "Lasioglossum_gemmeus" 1.24 "Halictidae" 5.29166666666667
+"101" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.26 "Halictidae" 5.29166666666667
+"102" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.35 "Halictidae" 5.29166666666667
+"103" "Daucus_carota_carota" 0.5 "Hylaeus_nigritus" 1.14 "Halictidae" 5.29166666666667
+"104" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.3 "Halictidae" 5.29166666666667
+"105" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.22 "Halictidae" 5.29166666666667
+"106" "Daucus_carota_carota" 0.5 "Andrena_sp" 1.19 "Andrenidae" 5.29166666666667
+"107" "Daucus_carota_carota" 0.5 "Halictus_sp" 1.21 "Halictidae" 5.29166666666667
+"108" "Daucus_carota_carota" 0.5 "Halictus_gemmeus" 1.22 "Halictidae" 5.29166666666667
+"109" "Daucus_carota_carota" 0.5 "Prosopis(Hylaeus)_variegatus" 1.31 "Halictidae" 5.29166666666667
+"110" "Daucus_carota_carota" 0.5 "Hylaeus_bisinuatus" 0.88 "Halictidae" 5.29166666666667
+"111" "Daucus_carota_carota" 0.5 "Apis_mellifera" 2.89 "Apidae" 5.29166666666667
+"112" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.32 "Halictidae" 5.29166666666667
+"113" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 0.88 "Halictidae" 5.29166666666667
+"114" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.32 "Halictidae" 5.29166666666667
+"115" "Daucus_carota_carota" 0.5 "Lasioglossum_smaragdulus??" 1.28 "Halictidae" 5.29166666666667
+"116" "Daucus_carota_carota" 0.5 "Lasioglossum_smaragdulus??" 1.22 "Halictidae" 5.29166666666667
+"117" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 0.78 "Halictidae" 5.29166666666667
+"118" "Daucus_carota_carota" 0.5 "Lasioglossum_sp" 1.3 "Halictidae" 5.29166666666667
+"119" "Daucus_carota_carota" 0.5 "Halictus_sp" 1.3 "Halictidae" 5.29166666666667
+"120" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.53 "Colletidae" 0.666666666666667
+"121" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.98 "Colletidae" 0.666666666666667
+"122" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 2.28 "Colletidae" 0.666666666666667
+"123" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 2 "Colletidae" 0.666666666666667
+"124" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.88 "Colletidae" 0.666666666666667
+"125" "Dorycnium_pentaphylum" 2.24 "Colletes_sp" 1.87 "Colletidae" 0.666666666666667
+"126" "Echium_sabulicola" 9 "Lasioglossum_sp" 0.9 "Halictidae" 0.166666666666667
+"127" "Echium_sabulicola" 9 "Ceratina_dentiventris" 1.09 "Megachilidae" 0.166666666666667
+"128" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.87 "Halictidae" 0.916666666666667
+"129" "Eryngium_campestre" 2 "Andrena_carbonaria?" 3.05 "Andrenidae" 0.916666666666667
+"130" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.24 "Halictidae" 0.916666666666667
+"131" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.4 "Halictidae" 0.916666666666667
+"132" "Eryngium_campestre" 2 "Lasioglossum_gemmeus" 1.11 "Halictidae" 0.916666666666667
+"133" "Eryngium_campestre" 2 "Lasioglossum_sp" 1 "Halictidae" 0.916666666666667
+"134" "Eryngium_campestre" 2 "Epeolus_variegatus" 1.99 "Apidae" 0.916666666666667
+"135" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.03 "Halictidae" 0.916666666666667
+"136" "Eryngium_campestre" 2 "Colletes_sp" 2.22 "Colletidae" 0.916666666666667
+"137" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.31 "Halictidae" 0.916666666666667
+"138" "Eryngium_campestre" 2 "Hylaeus_variegatus" 1.36 "Halictidae" 0.916666666666667
+"139" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.93 "Halictidae" 0.916666666666667
+"140" "Eryngium_campestre" 2 "Lasioglossum_gemmeus" 1.04 "Halictidae" 0.916666666666667
+"141" "Eryngium_campestre" 2 "Halictus_sp" 1.03 "Halictidae" 0.916666666666667
+"142" "Eryngium_campestre" 2 "Hylaeus_nigritum" 0.94 "Halictidae" 0.916666666666667
+"143" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.09 "Halictidae" 0.916666666666667
+"144" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.85 "Halictidae" 0.916666666666667
+"145" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.03 "Halictidae" 0.916666666666667
+"146" "Eryngium_campestre" 2 "Hylaeus_nigritum" 1.02 "Halictidae" 0.916666666666667
+"147" "Eryngium_campestre" 2 "Halictus_sp" 1.24 "Halictidae" 0.916666666666667
+"148" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.29 "Halictidae" 0.916666666666667
+"149" "Eryngium_campestre" 2 "Halictus_sp" 1.25 "Halictidae" 0.916666666666667
+"150" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.43 "Halictidae" 0.916666666666667
+"151" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.85 "Halictidae" 0.916666666666667
+"152" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.2 "Halictidae" 0.916666666666667
+"153" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.33 "Halictidae" 0.916666666666667
+"154" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.16 "Halictidae" 0.916666666666667
+"155" "Eryngium_campestre" 2 "Philanthus_pulchellus" 1.23 "Apidae" 0.916666666666667
+"156" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.11 "Halictidae" 0.916666666666667
+"157" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.99 "Halictidae" 0.916666666666667
+"158" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.2 "Halictidae" 0.916666666666667
+"159" "Eryngium_campestre" 2 "Lasioglossum_sp" 0.97 "Halictidae" 0.916666666666667
+"160" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.33 "Halictidae" 0.916666666666667
+"161" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.01 "Halictidae" 0.916666666666667
+"162" "Eryngium_campestre" 2 "Lasioglossum_gemmeus" 1.23 "Halictidae" 0.916666666666667
+"163" "Eryngium_campestre" 2 "_" 1.33 "Apidae" 0.916666666666667
+"164" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.6 "Halictidae" 0.916666666666667
+"165" "Eryngium_campestre" 2 "Andrena_sp" 1.45 "Andrenidae" 0.916666666666667
+"166" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.31 "Halictidae" 0.916666666666667
+"167" "Eryngium_campestre" 2 "Halictus_gemmeus" 1.26 "Halictidae" 0.916666666666667
+"168" "Eryngium_campestre" 2 "Lasioglossum_sp" 1.15 "Halictidae" 0.916666666666667
+"169" "Eryngium_campestre" 2 "Lasioglossum_smaragdulus??" 1.16 "Halictidae" 0.916666666666667
+"170" "Galactites_tomentosa" 10 "Andrena_sp" 1.38 "Andrenidae" 0.708333333333333
+"171" "Galactites_tomentosa" 10 "Andrena_sp" 1.35 "Andrenidae" 0.708333333333333
+"172" "Galactites_tomentosa" 10 "Halictus_quadricinctus" 2.72 "Halictidae" 0.708333333333333
+"173" "Galactites_tomentosa" 10 "Hoplitis_sp" 2.39 "Megachilidae" 0.708333333333333
+"174" "Galactites_tomentosa" 10 "Hoplitis??_sp" 2.49 "Megachilidae" 0.708333333333333
+"175" "Galactites_tomentosa" 10 "Hoplitis_sp" 2.89 "Megachilidae" 0.708333333333333
+"176" "Galactites_tomentosa" 10 "Anthidium_septemspinosum" 3.47 "Megachilidae" 0.708333333333333
+"177" "Galactites_tomentosa" 10 "Hoplitis??_sp" 2.45 "Megachilidae" 0.708333333333333
+"178" "Lavandula_stoechas" 4 "Halictus_pyrenaicus" 2.31 "Halictidae" 7.79166666666667
+"179" "Lavandula_stoechas" 4 "Panurgus_sp" 1.58 "Andrenidae" 7.79166666666667
+"180" "Lavandula_stoechas" 4 "Megachile??_sp" 2.64 "Megachilidae" 7.79166666666667
+"181" "Lavandula_stoechas" 4 "Apis_mellifera" 2.67 "Apidae" 7.79166666666667
+"182" "Lavandula_stoechas" 4 "Halictus_pyrenaicus" 2.41 "Halictidae" 7.79166666666667
+"183" "Lavandula_stoechas" 4 "Osmia_aurulenta" 2.39 "Megachilidae" 7.79166666666667
+"184" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4 "Megachilidae" 7.79166666666667
+"185" "Lavandula_stoechas" 4 "Eucera_sp" 3.25 "Apidae" 7.79166666666667
+"186" "Lavandula_stoechas" 4 "Andrena_sp" 2.43 "Andrenidae" 7.79166666666667
+"187" "Lavandula_stoechas" 4 "Apis_mellifera" 2.82 "Apidae" 7.79166666666667
+"188" "Lavandula_stoechas" 4 "Osmia_sp" 2.67 "Megachilidae" 7.79166666666667
+"189" "Lavandula_stoechas" 4 "Osmia_aurulenta" 2.5 "Megachilidae" 7.79166666666667
+"190" "Lavandula_stoechas" 4 "Lasioglossum_sp" 1.64 "Halictidae" 7.79166666666667
+"191" "Lavandula_stoechas" 4 "Andrena_sp" 1.75 "Andrenidae" 7.79166666666667
+"192" "Lavandula_stoechas" 4 "Anthophora_sp" 4.05 "Apidae" 7.79166666666667
+"193" "Lavandula_stoechas" 4 "Anthophora_plumipes" 3.27 "Apidae" 7.79166666666667
+"194" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.53 "Megachilidae" 7.79166666666667
+"195" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4.56 "Megachilidae" 7.79166666666667
+"196" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.52 "Megachilidae" 7.79166666666667
+"197" "Lavandula_stoechas" 4 "Lasioglossum_sp" 1.75 "Halictidae" 7.79166666666667
+"198" "Lavandula_stoechas" 4 "Halictus_pyrenaicus" 2.26 "Halictidae" 7.79166666666667
+"199" "Lavandula_stoechas" 4 "Anthidium_septemspinosum" 3.8 "Megachilidae" 7.79166666666667
+"200" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.37 "Megachilidae" 7.79166666666667
+"201" "Lavandula_stoechas" 4 "Lasioglossum_sp" 1.48 "Halictidae" 7.79166666666667
+"202" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4.04 "Megachilidae" 7.79166666666667
+"203" "Lavandula_stoechas" 4 "Apis_mellifera" 2.84 "Apidae" 7.79166666666667
+"204" "Lavandula_stoechas" 4 "Anthophora_plumipes" 4.28 "Apidae" 7.79166666666667
+"205" "Lavandula_stoechas" 4 "Anthidium_sticticum" 3.59 "Megachilidae" 7.79166666666667
+"206" "Lavandula_stoechas" 4 "Anthophora_plumipes" 4.13 "Apidae" 7.79166666666667
+"207" "Lavandula_stoechas" 4 "Chalicodoma_sp" 4.24 "Megachilidae" 7.79166666666667
+"208" "Linum_sp" 2.12 "Hoplitis_sp" 2.69 "Megachilidae" 0.0833333333333333
+"209" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.39 "Halictidae" 4.33333333333333
+"210" "Opuntia_stricta" 0 "Bombus_sp" 3.83 "Apidae" 4.33333333333333
+"211" "Opuntia_stricta" 0 "Anthidium_septemspinosum" 3.27 "Megachilidae" 4.33333333333333
+"212" "Opuntia_stricta" 0 "Apis_mellifera" 2.68 "Apidae" 4.33333333333333
+"213" "Opuntia_stricta" 0 "Apis_mellifera" 2.56 "Apidae" 4.33333333333333
+"214" "Opuntia_stricta" 0 "Apis_mellifera" 2.71 "Apidae" 4.33333333333333
+"215" "Opuntia_stricta" 0 "Apis_mellifera" 2.53 "Apidae" 4.33333333333333
+"216" "Opuntia_stricta" 0 "Xylocopa_sp" 7.04 "Apidae" 4.33333333333333
+"217" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.16 "Halictidae" 4.33333333333333
+"218" "Opuntia_stricta" 0 "Xylocopa_sp" 6.92 "Apidae" 4.33333333333333
+"219" "Opuntia_stricta" 0 "Halictus_pyrenaicus" 2.12 "Halictidae" 4.33333333333333
+"220" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.12 "Halictidae" 4.33333333333333
+"221" "Opuntia_stricta" 0 "Halictus_pyrenaicus" 1.92 "Halictidae" 4.33333333333333
+"222" "Opuntia_stricta" 0 "Apis_mellifera" 2.83 "Apidae" 4.33333333333333
+"223" "Opuntia_stricta" 0 "Apis_mellifera" 1.55 "Apidae" 4.33333333333333
+"224" "Opuntia_stricta" 0 "Apis_mellifera" 2.61 "Apidae" 4.33333333333333
+"225" "Opuntia_stricta" 0 "Lasioglossum_sp" 1.49 "Halictidae" 4.33333333333333
+"226" "Opuntia_stricta" 0 "Ceratina_cucurbitina" 1.3 "Megachilidae" 4.33333333333333
+"227" "Opuntia_stricta" 0 "Apis_mellifera" 2.69 "Apidae" 4.33333333333333
+"228" "Psoralea_bituminosa" 6.36 "Anthidium_septemspinosum" 3.45 "Megachilidae" 3
+"229" "Psoralea_bituminosa" 6.36 "Lasioglossum_sp" 1.13 "Halictidae" 3
+"230" "Rosmarinus_officinalis" 5.21 "Colletes_sp" 2.07 "Colletidae" 5.125
+"231" "Rosmarinus_officinalis" 5.21 "Anthophora_plumipes" 3.34 "Apidae" 5.125
+"232" "Rosmarinus_officinalis" 5.21 "Andrena_sp" 2.2 "Andrenidae" 5.125
+"233" "Rosmarinus_officinalis" 5.21 "Nomada_succincta" 1.91 "Apidae" 5.125
+"234" "Rosmarinus_officinalis" 5.21 "Lasioglossum_sp" 1.61 "Halictidae" 5.125
+"235" "Rosmarinus_officinalis" 5.21 "Apis_mellifera" 2.75 "Apidae" 5.125
+"236" "Ruta_chalepensis" 0 "Lasioglossum_gemmeus" 1.14 "Halictidae" 0.958333333333333
+"237" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.42 "Halictidae" 0.958333333333333
+"238" "Ruta_chalepensis" 0 "Hylaeus_nigritus" 0.99 "Halictidae" 0.958333333333333
+"239" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.32 "Halictidae" 0.958333333333333
+"240" "Ruta_chalepensis" 0 "Halictus_sp" 1.2 "Halictidae" 0.958333333333333
+"241" "Ruta_chalepensis" 0 "Hylaeus_nigritus" 0.81 "Halictidae" 0.958333333333333
+"242" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.36 "Halictidae" 0.958333333333333
+"243" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.15 "Halictidae" 0.958333333333333
+"244" "Ruta_chalepensis" 0 "Lasioglossum_sp" 1.32 "Halictidae" 0.958333333333333
+"245" "Scabiosa_stellata" 6 "Lasioglossum_sp" 1.3 "Halictidae" 0.0416666666666667
+"246" "Scabiosa_stellata" 6 "Halictus_sp" 2.26 "Halictidae" 0.0416666666666667
+"247" "Scabiosa_stellata" 6 "Ceratina_cucurbitina" 1.28 "Megachilidae" 0.0416666666666667
+"248" "Scabiosa_stellata" 6 "Halictus_sp" 2.15 "Halictidae" 0.0416666666666667
+"249" "Sedum_sediforme" 0 "Colletes_sp" 1.92 "Colletidae" 4.41666666666667
+"250" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.41 "Halictidae" 4.41666666666667
+"251" "Sedum_sediforme" 0 "Halictus_sp" 1.53 "Halictidae" 4.41666666666667
+"252" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.2 "Halictidae" 4.41666666666667
+"253" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.26 "Halictidae" 4.41666666666667
+"254" "Sedum_sediforme" 0 "Halictus_sp" 1.28 "Halictidae" 4.41666666666667
+"255" "Sedum_sediforme" 0 "Megachile_sp" 2.18 "Megachilidae" 4.41666666666667
+"256" "Sedum_sediforme" 0 "Colletes_sp" 2.55 "Colletidae" 4.41666666666667
+"257" "Sedum_sediforme" 0 "Anthidium_sp" 3.3 "Megachilidae" 4.41666666666667
+"258" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.29 "Halictidae" 4.41666666666667
+"259" "Sedum_sediforme" 0 "Halictus_sp" 1.33 "Halictidae" 4.41666666666667
+"260" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.25 "Halictidae" 4.41666666666667
+"261" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.25 "Halictidae" 4.41666666666667
+"262" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.02 "Halictidae" 4.41666666666667
+"263" "Sedum_sediforme" 0 "Halictus_pyrenaicus" 1.83 "Halictidae" 4.41666666666667
+"264" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.31 "Halictidae" 4.41666666666667
+"265" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.34 "Halictidae" 4.41666666666667
+"266" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.34 "Halictidae" 4.41666666666667
+"267" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.34 "Halictidae" 4.41666666666667
+"268" "Sedum_sediforme" 0 "Halictus_sp" 1.34 "Halictidae" 4.41666666666667
+"269" "Sedum_sediforme" 0 "Halictus_sp" 1.88 "Halictidae" 4.41666666666667
+"270" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.41 "Halictidae" 4.41666666666667
+"271" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.46 "Halictidae" 4.41666666666667
+"272" "Sedum_sediforme" 0 "Lasioglossum_smaragdulus??" 1.39 "Halictidae" 4.41666666666667
+"273" "Sedum_sediforme" 0 "Lasioglossum_smaragdulus??" 1.24 "Halictidae" 4.41666666666667
+"274" "Sedum_sediforme" 0 "Halictus_sp" 1.12 "Halictidae" 4.41666666666667
+"275" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.96 "Halictidae" 4.41666666666667
+"276" "Sedum_sediforme" 0 "Lasioglossum_sp" 1.19 "Halictidae" 4.41666666666667
+"277" "Sedum_sediforme" 0 "Halictus_sp" 1.92 "Halictidae" 4.41666666666667
+"278" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.66 "Andrenidae" 1.58333333333333
+"279" "Sonchus_tenerrinus" 1.08 "Halictus_pyrenaicus" 1.96 "Halictidae" 1.58333333333333
+"280" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2.24 "Andrenidae" 1.58333333333333
+"281" "Sonchus_tenerrinus" 1.08 "Halictus_sp" 1.15 "Halictidae" 1.58333333333333
+"282" "Sonchus_tenerrinus" 1.08 "Halictus_sp" 1.31 "Halictidae" 1.58333333333333
+"283" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.75 "Andrenidae" 1.58333333333333
+"284" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.49 "Andrenidae" 1.58333333333333
+"285" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.39 "Andrenidae" 1.58333333333333
+"286" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2 "Andrenidae" 1.58333333333333
+"287" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.33 "Andrenidae" 1.58333333333333
+"288" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.36 "Andrenidae" 1.58333333333333
+"289" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 0.93 "Halictidae" 1.58333333333333
+"290" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 2.1 "Andrenidae" 1.58333333333333
+"291" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.5 "Andrenidae" 1.58333333333333
+"292" "Sonchus_tenerrinus" 1.08 "Lasioglossum??_sp" 1.47 "Halictidae" 1.58333333333333
+"293" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.51 "Andrenidae" 1.58333333333333
+"294" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.14 "Halictidae" 1.58333333333333
+"295" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.46 "Andrenidae" 1.58333333333333
+"296" "Sonchus_tenerrinus" 1.08 "Prosopis(Hylaeus)_sp??" 1.04 "Colletidae" 1.58333333333333
+"297" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.9 "Andrenidae" 1.58333333333333
+"298" "Sonchus_tenerrinus" 1.08 "Hoplitis_sp" 1.86 "Megachilidae" 1.58333333333333
+"299" "Sonchus_tenerrinus" 1.08 "Hoplitis_sp" 1.88 "Megachilidae" 1.58333333333333
+"300" "Sonchus_tenerrinus" 1.08 "Hylaeus_sp" 0.99 "Colletidae" 1.58333333333333
+"301" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.76 "Andrenidae" 1.58333333333333
+"302" "Sonchus_tenerrinus" 1.08 "Nomada_sp" 0.96 "Apidae" 1.58333333333333
+"303" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2.35 "Andrenidae" 1.58333333333333
+"304" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.56 "Andrenidae" 1.58333333333333
+"305" "Sonchus_tenerrinus" 1.08 "Halictus_pyrenaicus" 2.14 "Halictidae" 1.58333333333333
+"306" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.59 "Andrenidae" 1.58333333333333
+"307" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.03 "Halictidae" 1.58333333333333
+"308" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.59 "Andrenidae" 1.58333333333333
+"309" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.72 "Andrenidae" 1.58333333333333
+"310" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.07 "Halictidae" 1.58333333333333
+"311" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.63 "Andrenidae" 1.58333333333333
+"312" "Sonchus_tenerrinus" 1.08 "Andrena_cinerea" 2.17 "Andrenidae" 1.58333333333333
+"313" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.71 "Andrenidae" 1.58333333333333
+"314" "Sonchus_tenerrinus" 1.08 "Hylaeus_sp" 1.04 "Colletidae" 1.58333333333333
+"315" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.62 "Andrenidae" 1.58333333333333
+"316" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.27 "Halictidae" 1.58333333333333
+"317" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 0.92 "Halictidae" 1.58333333333333
+"318" "Sonchus_tenerrinus" 1.08 "Nomada_sp" 1.26 "Apidae" 1.58333333333333
+"319" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.54 "Andrenidae" 1.58333333333333
+"320" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.38 "Halictidae" 1.58333333333333
+"321" "Sonchus_tenerrinus" 1.08 "Andrena_ovatula" 1.89 "Andrenidae" 1.58333333333333
+"322" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.35 "Andrenidae" 1.58333333333333
+"323" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.7 "Andrenidae" 1.58333333333333
+"324" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.91 "Andrenidae" 1.58333333333333
+"325" "Sonchus_tenerrinus" 1.08 "Panurgus_sp" 1.34 "Andrenidae" 1.58333333333333
+"326" "Sonchus_tenerrinus" 1.08 "Halictus_pyrenaicus" 2.08 "Halictidae" 1.58333333333333
+"327" "Sonchus_tenerrinus" 1.08 "Lasioglossum??_sp" 1.56 "Halictidae" 1.58333333333333
+"328" "Sonchus_tenerrinus" 1.08 "Andrena_sp" 1.83 "Andrenidae" 1.58333333333333
+"329" "Sonchus_tenerrinus" 1.08 "Colletes_sp" 1.82 "Colletidae" 1.58333333333333
+"330" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.37 "Halictidae" 1.58333333333333
+"331" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1 "Halictidae" 1.58333333333333
+"332" "Sonchus_tenerrinus" 1.08 "Lasioglossum_sp" 1.26 "Halictidae" 1.58333333333333
+"333" "Thymelaea_hirusta" 1 "Lasioglossum_sp" 1.39 "Halictidae" 3.5
+"334" "Thymelaea_hirusta" 1 "Andrena_agilissima" 2.7 "Andrenidae" 3.5
+"335" "Thymelaea_hirusta" 1 "Bombus_terrestris" 6.58 "Apidae" 3.5
+"336" "Thymelaea_hirusta" 1 "Apis_mellifera" 2.68 "Apidae" 3.5
+"337" "Thymelaea_hirusta" 1 "Andrena_agilissima" 2.31 "Andrenidae" 3.5
+"338" "Urospermum_picroides" 1 "Panurgus_sp" 1.49 "Andrenidae" 1.20833333333333
+"339" "Urospermum_picroides" 1 "Panurgus_banksianus" 2.34 "Andrenidae" 1.20833333333333
+"340" "Urospermum_picroides" 1 "Andrena_cinerea" 2.22 "Andrenidae" 1.20833333333333
+"341" "Urospermum_picroides" 1 "Halictus_pyrenaicus" 2.28 "Halictidae" 1.20833333333333
+"342" "Urospermum_picroides" 1 "Panurgus_sp" 1.35 "Andrenidae" 1.20833333333333
+"343" "Urospermum_picroides" 1 "Panurgus_sp" 1.65 "Andrenidae" 1.20833333333333
+"344" "Urospermum_picroides" 1 "Panurgus_sp" 1.67 "Andrenidae" 1.20833333333333
+"345" "Urospermum_picroides" 1 "Panurgus_sp" 1.6 "Andrenidae" 1.20833333333333
+"346" "Urospermum_picroides" 1 "Panurgus_banksianus" 2.07 "Andrenidae" 1.20833333333333

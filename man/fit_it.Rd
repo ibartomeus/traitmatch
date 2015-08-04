@@ -6,7 +6,8 @@
 \usage{
 fit_it(model, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1, pars = c(a0 = 0, a1
   = 0, b0 = 0, b1 = 0), par_lo = c(a0 = -5000, a1 = -5000, b0 = -5000, b1 =
-  -5000), par_hi = c(a0 = 5000, a1 = 5000, b0 = 5000, b1 = 5000))
+  -5000), par_hi = c(a0 = 5000, a1 = 5000, b0 = 5000, b1 = 5000),
+  max.time = 1800)
 }
 \arguments{
 \item{model}{One of the three models implemented integrated_model, niche_model or neutral_model.}
@@ -22,6 +23,8 @@ and can use independent information on the trait distribution to be calculated.}
 and can use independent information on the trait distribution to be calculated.}
 
 \item{pars}{a vector of the form c(a0 = 0, a1 = 0, b0 = 0, b1 = 0) with the initial parameters.}
+
+\item{max.time}{value in seconds to stop the estimation of params. Set to 1800 (30 minuts)}
 
 \item{pars_lo}{a vector of the form c(a0 = 0, a1 = 0, b0 = 0, b1 = 0) with the lower limits that the
 parameters can reach. You can use a priosy information to constrain the posible values of the parameters

@@ -1,23 +1,28 @@
-#' @name Useful functions
+#' @name Useful_functions
+#' @aliases weighted_mean 
+#' @aliases weighted_sd 
 #' 
 #' @title weighted mean and sd
 #' 
 #' @description just weighted mean and sd.  
 #' 
-#' @param x .
-#' @param w
+#' @param x vector to compute the mean over.
+#' @param w a vector of same length with the weigths of each element.
 #' 
-#' @return x
+#' @return a value with the weighted mean or sd.
 #'
-#' @examples x
+#' @examples 
+#' weighted_mean(c(2,3,4), c(1,1,2))
+#' weighted_sd(c(2,3,4), c(1,1,2))
 #' 
+#' @rdname Useful_functions 
 #' @export
-weighted.mean <- function(x, w) { 
+weighted_mean <- function(x, w) { 
   sum.w <- sum(w) 
   sum(x * w) / sum(w) 
 } 
-
-weighted.sd <- function(x, w) { 
+#' @export 
+weighted_sd <- function(x, w) { 
   sum.w <- sum(w) 
   sum.w2 <- sum(w^2) 
   mean.w <- sum(x * w) / sum(w) 
