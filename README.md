@@ -135,7 +135,9 @@ barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", 
 l2 <- c("Hervibory_bin", lh_model, lh_niche, lh_neutral)
 
 # Here the integrated is as good as the neutral model.
-the frequency of interactions
+
+# Now we test the same data taking into account the frequency of interactions.
+
 # Prepare the data
 head(grass)
 Incisive.strength <- c()
