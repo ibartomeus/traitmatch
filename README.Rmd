@@ -6,12 +6,14 @@ output: html_document
 ---
 # traitmatch: Package to predict trait matching from species interactions.
 
-This document reproduces the analysis done in Bartomeus et al 2015 (Functional Ecology) to show how it works.
+This document reproduces the analysis done in Bartomeus et al. 2015 (Functional Ecology) to show how it works.
 
 To install the package run (only once):
 
 ```{r}
 install.packages("devtools") 
+install.packages("GenSA") 
+install.packages("SDMTools") 
 require(devtools)
 install_github("traitmatch", "ibartomeus")
 require(traitmatch)
@@ -31,7 +33,7 @@ MPred = log10(fish$standardised_predator_length*10)
 MPrey = log10(fish$si_prey_length*10)
 ```
 
-Then we fit the `integrated_model` that integrates neutral and niche constrains. We use pairwise Prey-Predatory interactions (Tlevel vectors) and we asume that the distribution of preys is well characterized by this network (we use mean and standard deviation directly from the distribution of prey interactions). Here we constrain the parameters with a priori information. For example, the slope of the relationship has to be positive (the bigger the predator, the bigger the prey). Tuning the a priori assumptions is important to get good estimates of the parameters. With unconstrained estimates (MLE), some model optimization will struggle to find maximum likelihood estimates and yield erronous parameter estimates, such as a vertical slope. It is therefore critical to check that the results make sense before accepting them as the MLE. This process is slow, specially for large datasets like this one. You can use the max.time (in seconds) to cut the process to e.g. 900 secoonds (15 minuts). The default is 30 minutes. Note that the estimates can be bad if too little time allowed for the simulated annealing to converge. 
+Then we fit the `integrated_model` that integrates neutral and niche constraints. We use pairwise Prey-Predatory interactions (Tlevel vectors) and we asume that the distribution of preys is well characterized by this network (we use mean and standard deviation directly from the distribution of prey interactions). Here we constrain the parameters with a priori information. For example, the slope of the relationship has to be positive (the bigger the predator, the bigger the prey). Tuning the a priori assumptions is important to get good estimates of the parameters. With unconstrained estimates (MLE), some model optimization will struggle to find maximum likelihood estimates and yield erroneous parameter estimates, such as a vertical slope. It is therefore critical to check that the results make sense before accepting them as the MLE. This process is slow, especially for large datasets like this one. You can use the max.time (in seconds) to cut the process to e.g. 900 seconds (15 minutes). The default is 30 minutes. Note that the estimates can be bad if too little time is allowed for the simulated annealing (SA) to converge. 
 
 ```{r}
 ?fit_it
@@ -105,13 +107,13 @@ pars_grass_bin <- fit_it(integrated_model,
                          Tlevel1 = grass$P.Leaf.dry.matter.content, 
                          Tlevel2 = grass$G.Incisive.strength,
                          mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
-                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content)) 
+                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
 
 # Note that in this case we use the default pars, which are quite unconstrained, but work well in this case.
 pars_grass_bin
 
 plot_pred(pars = pars_grass_bin, Tlevel1 = jitter(grass$P.Leaf.dry.matter.content), 
-          Tlevel2 = jitter(grass$G.Incisive.strength), xlab = "Incisive strength", 
+          Tlevel2 = jitter(grass$G.Incisive.strength), xlab = "Incisive strength",
           ylab = "Leaf dry matter content")
 
 # Compare with the likelihood of the three models
@@ -177,7 +179,7 @@ pars_grass_freq_niche <- fit_it(niche_model,
                                 sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
 
 # plot_pred(pars = pars_grass_freq_niche, Tlevel1 = jitter(Dry.matter,100), 
- #         Tlevel2 = jitter(Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
+#        Tlevel2 = jitter(Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
 
 # Likelihood
 lh_model <- -integrated_model(pars_grass_freq, Dry.matter, Incisive.strength, 
@@ -281,7 +283,7 @@ pars_host <- fit_it(integrated_model,
                         par_lo = c(a0 = 0, a1 = -10, b0 = -10, b1 = -10),
                         par_hi = c(a0 = 10, a1 = 0, b0 = 10, b1 = 10))
 
-# With unconstrained parameters, the model behaves wierd, so we have to constrain the values to sensible limits. You can do that by looking at x and y axes ranges and think which slope values are possible.
+# With unconstrained parameters, the model behaves weirdly, so we have to constrain the values to sensible limits. You can do that by looking at x and y axes ranges and think which slope values are possible.
 pars_host
 plot_pred(pars = pars_host, Tlevel1 = jitter(host_body_length), 
           Tlevel2 = jitter(parasite_body_length), xlab = "Parasite body size", ylab = "Host body size")
@@ -314,7 +316,7 @@ barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", 
 l4 <- c("Parasitsim", lh_model, lh_niche, lh_neutral)
 
 ```
-Thats's it. You can also gather a summary table of parameters and likelihoods for all models done:
+Thats's it. You can also gather a summary table of parameters and likelihoods for all the models you have run:
 
 ```{r}
 # Table of likelihoods
