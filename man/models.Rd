@@ -10,7 +10,7 @@ integrated_model(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1)
 \description{
 This models are described in Bartomeus at al. (2015 Functional Ecology) and are based
 on Williams et al. 2000 models. They are intended to be used with fit_it function. The integrated model
-considers both neutral and niche constrains, while the neutral and niche models only consider its respective
+considers both neutral and niche constraints, while the neutral and niche models only consider its respective
 components.
 }
 \author{

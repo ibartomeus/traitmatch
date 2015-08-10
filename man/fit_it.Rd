@@ -2,7 +2,7 @@
 % Please edit documentation in R/fit_it.R
 \name{fit_it}
 \alias{fit_it}
-\title{Fit a model using SA.}
+\title{Fit a model using Genaralized Simulated Annealing (SA) functions.}
 \usage{
 fit_it(model, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1, pars = c(a0 = 0, a1
   = 0, b0 = 0, b1 = 0), par_lo = c(a0 = -5000, a1 = -5000, b0 = -5000, b1 =

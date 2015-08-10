@@ -1,6 +1,6 @@
 #' @name fit_it
 #' 
-#' @title Fit a model using SA.
+#' @title Fit a model using Genaralized Simulated Annealing (SA) functions.
 #' 
 #' @description Fit the paramaters of a given model to data using SA. Can be slow for large datasets. 
 #' 

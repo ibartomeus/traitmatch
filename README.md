@@ -1,11 +1,13 @@
 # traitmatch: Package to predict trait matching from species interactions.
 
-This document reproduces the analysis done in Bartomeus et al 2015 (Functional Ecology) to show how it works.
+This document reproduces the analysis done in Bartomeus et al. 2015 (Functional Ecology) to show how it works.
 
 To install the package run (only once):
 
 ```
 install.packages("devtools") 
+install.packages("GenSA") 
+install.packages("SDMTools") 
 require(devtools)
 install_github("traitmatch", "ibartomeus")
 require(traitmatch)
@@ -15,8 +17,9 @@ We first use data on predator and prey body size from Barnes et al. 2008. We loa
 
 ```
 # Load data for Pred/Prey
-fish <- read.table("data/Barnes2008.txt", header = TRUE)
-
+#fish <- read.table("data/Barnes2008.txt", header = TRUE)
+fish <- Barnes2008
+  
 # Each row represents an interaction
 head(fish) 
 
@@ -25,10 +28,11 @@ MPred = log10(fish$standardised_predator_length*10)
 MPrey = log10(fish$si_prey_length*10)
 ```
 
-Then we fit the `integrated_model` that integrates neutral and niche constrains. We use pairwise Prey-Predatory interactions (Tlevel vectors) and we asume that the distribution of preys is well characterized by this network (we use mean and standard deviation directly from the distribution of prey interactions). Here we constrain the parameters with a priori information. For example, the slope of the relationship has to be positive (the bigger the predator, the bigger the prey). Tuning the a priori assumptions is important to get good estimates of the parameters. With unconstrained estimates (MLE), some model optimization will struggle to find maximum likelihood estimates and yield erronous parameter estimates, such as a vertical slope. It is therefore critical to check that the results make sense before accepting them as the MLE. This process is slow, specially for large datasets like this one. You can use the max.time (in seconds) to cut the process to e.g. 900 secoonds (15 minuts). The default is 30 minutes. Note that the estimates can be bad if too little time allowed for the simulated annealing to converge. 
+Then we fit the `integrated_model` that integrates neutral and niche constraints. We use pairwise Prey-Predatory interactions (Tlevel vectors) and we asume that the distribution of preys is well characterized by this network (we use mean and standard deviation directly from the distribution of prey interactions). Here we constrain the parameters with a priori information. For example, the slope of the relationship has to be positive (the bigger the predator, the bigger the prey). Tuning the a priori assumptions is important to get good estimates of the parameters. With unconstrained estimates (MLE), some model optimization will struggle to find maximum likelihood estimates and yield erroneous parameter estimates, such as a vertical slope. It is therefore critical to check that the results make sense before accepting them as the MLE. This process is slow, especially for large datasets like this one. You can use the max.time (in seconds) to cut the process to e.g. 900 seconds (15 minutes). The default is 30 minutes. Note that the estimates can be bad if too little time is allowed for the simulated annealing (SA) to converge. 
 
 ```
 ?fit_it
+mt <- 60 #Define max.time to 60 sec to run things fast. Set to minimum 900 for a decent estimation of parameters.
 pars_pre <- fit_it(integrated_model, 
                    Tlevel1 = MPrey,  
                    Tlevel2 = MPred,
@@ -37,7 +41,7 @@ pars_pre <- fit_it(integrated_model,
                    pars = c(a0 = 0, a1 = 0, b0 = 0, b1 = 0),
                    par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10),
                    par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10),
-                   max.time = 900)
+                   max.time = mt)
 pars_pre 
 ```
 
@@ -62,7 +66,8 @@ pars_pre_niche <- fit_it(niche_model,
                          sd_Tlevel1 = sd(MPrey),
                          pars = c(a0 = 0, a1 = 0, b0 = 0, b1 = 0),
                          par_lo = c(a0 = -10, a1 = 0, b0 = -10, b1 = -10),
-                         par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10))
+                         par_hi = c(a0 = 10, a1 = 10, b0 = 10, b1 = 10),
+                         max.time = mt)
 
 plot_pred(pars = pars_pre_niche, Tlevel1 = MPrey, 
           Tlevel2 = MPred, xlab = "log (Predator body size)", ylab = "log (prey body size)",
@@ -88,7 +93,8 @@ Now we do the same for grasshopper hervibore data.
 
 ```
 # Load data for grasshoppers
-grass = read.table("data/Deraison2014.txt", h = TRUE)
+#grass <- read.table("data/Deraison2014.txt", h = TRUE)
+grass <- Deraison2014
 head(grass)
 
 # As is experimental data, we subset only the "presences" for illustrative purposes.
@@ -99,13 +105,14 @@ pars_grass_bin <- fit_it(integrated_model,
                          Tlevel1 = grass$P.Leaf.dry.matter.content, 
                          Tlevel2 = grass$G.Incisive.strength,
                          mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
-                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content)) 
+                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content),
+                         max.time = mt)
 
 # Note that in this case we use the default pars, which are quite unconstrained, but work well in this case.
 pars_grass_bin
 
 plot_pred(pars = pars_grass_bin, Tlevel1 = jitter(grass$P.Leaf.dry.matter.content), 
-          Tlevel2 = jitter(grass$G.Incisive.strength), xlab = "Incisive strength", 
+          Tlevel2 = jitter(grass$G.Incisive.strength), xlab = "Incisive strength",
           ylab = "Leaf dry matter content")
 
 # Compare with the likelihood of the three models
@@ -113,7 +120,8 @@ pars_grass_bin_niche = fit_it(niche_model,
                    Tlevel1 = grass$P.Leaf.dry.matter.content, 
                    Tlevel2 = grass$G.Incisive.strength,
                    mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
-                   sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
+                   sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content),
+                   max.time = mt)
 
 # Plot_pred(pars = pars_grass_bin_niche, Tlevel1 = jitter(grass$P.Leaf.dry.matter.content), 
 #         Tlevel2 = jitter(grass$G.Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
@@ -156,7 +164,8 @@ pars_grass_freq <- fit_it(integrated_model,
                          Tlevel1 = Dry.matter, 
                          Tlevel2 = Incisive.strength,
                          mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
-                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
+                         sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content),
+                         max.time = mt)
 
 # Note the distribution (mean and standard deviation) is unweigthed because the experiment had equal abundances of plant species. We can use this knowledge to atribute each plant equal weight.
 pars_grass_freq
@@ -168,10 +177,11 @@ pars_grass_freq_niche <- fit_it(niche_model,
                                 Tlevel1 = Dry.matter, 
                                 Tlevel2 = Incisive.strength,
                                 mean_Tlevel1 = mean(grass$P.Leaf.dry.matter.content),
-                                sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content))
+                                sd_Tlevel1 = sd(grass$P.Leaf.dry.matter.content),
+                                max.time = mt)
 
 # plot_pred(pars = pars_grass_freq_niche, Tlevel1 = jitter(Dry.matter,100), 
- #         Tlevel2 = jitter(Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
+#        Tlevel2 = jitter(Incisive.strength), xlab = "Incisive strength", ylab = "Leaf dry matter content")
 
 # Likelihood
 lh_model <- -integrated_model(pars_grass_freq, Dry.matter, Incisive.strength, 
@@ -193,12 +203,13 @@ And here is the code for the plants and pollinators:
 
 ```
 # Read data
-pols = read.table("data/Bartomeus2008.txt", h = TRUE)
+#pols  <-  read.table("data/Bartomeus2008.txt", h = TRUE)
+pols <- Bartomeus2008
 head(pols)
 
 # Transform body size to tongue lenght first based on Cariveau et al. Submitted.
 require(devtools)
-install_github("BeeIT", "ibartomeus")
+install_github("BeeIT", "ibartomeus") #just once
 library(BeeIT)
 head(pols)
 pols$tongue <- ITtongue(pols$IT_mm,pols$family , mouthpart = "tongue")
@@ -212,7 +223,8 @@ pars_pols <- fit_it(integrated_model,
                     Tlevel1 = pols$nectar_holder_depth_mm, 
                       Tlevel2 = log(pols$tongue),
                     mean_Tlevel1 = weighted_mean(plants$nectar_holder_depth_mm, plants$cover),
-                    sd_Tlevel1 = weighted_sd(plants$nectar_holder_depth_mm, plants$cover))
+                    sd_Tlevel1 = weighted_sd(plants$nectar_holder_depth_mm, plants$cover),
+                    max.time = mt)
 
 # Note that here we have independent data on plant abundance (% cover). Hence we can use this data directly to fit the model.
 # If interested, you can see that the inference from the network, is quite similar to the real cover 
@@ -230,7 +242,8 @@ pars_pol_niche = fit_it(niche_model,
                    Tlevel1 = pols$nectar_holder_depth_mm, 
                    Tlevel2 = log(pols$tongue),
                    mean_Tlevel1 = weighted_mean(plants$nectar_holder_depth_mm, plants$cover),
-                   sd_Tlevel1 = weighted_sd(plants$nectar_holder_depth_mm, plants$cover))
+                   sd_Tlevel1 = weighted_sd(plants$nectar_holder_depth_mm, plants$cover),
+                   max.time = mt)
 plot_pred(pars = pars_pol_niche, Tlevel1 = jitter(pols$nectar_holder_depth_mm, 10), 
           Tlevel2 = log(pols$tongue), xlab = "log(Pollinator tongue size)", ylab = "Nectar depth")
 
@@ -253,7 +266,8 @@ Hosts and parasitoids. An example that doesn't work as well.
 
 ```
 # Read and format data
-host = read.table("data/Tylianakis2008.txt", h = TRUE)
+#host  <-  read.table("data/Tylianakis2008.txt", h = TRUE)
+host  <-  Tylianakis2008
 head(host)
 host_body_length <- c()
 for(i in 1:nrow(host)){
@@ -273,9 +287,10 @@ pars_host <- fit_it(integrated_model,
                         mean_Tlevel1 = weighted_mean(host$host_body_length, host$freq),
                         sd_Tlevel1 = weighted_sd(host$host_body_length, host$freq),
                         par_lo = c(a0 = 0, a1 = -10, b0 = -10, b1 = -10),
-                        par_hi = c(a0 = 10, a1 = 0, b0 = 10, b1 = 10))
+                        par_hi = c(a0 = 10, a1 = 0, b0 = 10, b1 = 10),
+                        max.time = mt)
 
-# With unconstrained parameters, the model behaves wierd, so we have to constrain the values to sensible limits. You can do that by looking at x and y axes ranges and think which slope values are possible.
+# With unconstrained parameters, the model behaves weirdly, so we have to constrain the values to sensible limits. You can do that by looking at x and y axes ranges and think which slope values are possible.
 pars_host
 plot_pred(pars = pars_host, Tlevel1 = jitter(host_body_length), 
           Tlevel2 = jitter(parasite_body_length), xlab = "Parasite body size", ylab = "Host body size")
@@ -288,7 +303,8 @@ pars_host_niche <- fit_it(niche_model,
                     mean_Tlevel1 = weighted_mean(host$host_body_length, host$freq),
                     sd_Tlevel1 = weighted_sd(host$host_body_length, host$freq),
                     par_lo = c(a0 = 0, a1 = -10, b0 = -10, b1 = -10),
-                    par_hi = c(a0 = 10, a1 = 0, b0 = 10, b1 = 10))
+                    par_hi = c(a0 = 10, a1 = 0, b0 = 10, b1 = 10),
+                    max.time = mt)
 
 plot_pred(pars = pars_host_niche, Tlevel1 = host_body_length, 
           Tlevel2 = parasite_body_length, xlab = "Parasite body size", ylab = "Host body size")
@@ -308,7 +324,7 @@ barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", 
 l4 <- c("Parasitsim", lh_model, lh_niche, lh_neutral)
 
 ```
-Thats's it. You can also gather a summary table of parameters and likelihoods for all models done:
+Thats's it. You can also gather a summary table of parameters and likelihoods for all the models you have run:
 
 ```
 # Table of likelihoods
@@ -324,3 +340,5 @@ colnames(dd) <- c("a0", "a1", "b0", "b1")
 dd
 
 ```
+
+
