@@ -39,8 +39,9 @@ integrated_model = function(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
 	return(-sum(log(pML)))		
 }
 #' @export
-neutral_model = function(Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
-	# Compute the conditional
+neutral_model = function(pars = NULL, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1) {
+  if (!is.null(pars)) warning("The neutral_model function does not use the content of the argument pars")
+  # Compute the conditional
 	pLM = 1
 	# Compute the marginal
 	pM = dnorm(x=Tlevel1, mean = mean_Tlevel1, sd = sd_Tlevel1)
