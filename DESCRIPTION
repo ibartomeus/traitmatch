@@ -4,10 +4,13 @@ Title: Package to predict trait matching from species interactions
 Version: 0.1.0
 Date: 2015-07-31
 Author: Dominique Gravel and Ignasi Bartomeus <nacho.bartomeus@gmail.com>
-  Maintainer: Ignasi Bartomeus <nacho.bartomeus@gmail.com>
-  Depends:
+Maintainer: Ignasi Bartomeus <nacho.bartomeus@gmail.com>
+Depends:
   knitr
   GenSA
+Imports:
+  GenSA,
+  SDMTools
 LazyData: true
 Description: Package to predict trait matching from species interactions.
 License: GPL (>= 2)

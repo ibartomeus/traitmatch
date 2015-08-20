@@ -18,14 +18,13 @@
 #' @rdname Useful_functions 
 #' @export
 weighted_mean <- function(x, w) { 
-  sum.w <- sum(w) 
   sum(x * w) / sum(w) 
 } 
 #' @export 
 weighted_sd <- function(x, w) { 
-  sum.w <- sum(w) 
-  sum.w2 <- sum(w^2) 
-  mean.w <- sum(x * w) / sum(w) 
-  ((sum.w / (sum.w^2 - sum.w2)) * sum(w * (x - mean.w)^2))^0.5
+  sum_w <- sum(w) 
+  sum_w2 <- sum(w^2) 
+  mean_w <- sum(x * w) / sum(w) 
+  ((sum_w / (sum_w^2 - sum_w2)) * sum(w * (x - mean_w)^2))^0.5
 } 
 

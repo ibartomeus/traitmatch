@@ -26,8 +26,7 @@
 plot_pred <- function(pars,Tlevel1, Tlevel2, 
                       xlab = "Trait level 2", ylab = "Trait level 1",
                       legend = TRUE,
-                      pch = 19){
-  require(SDMTools)
+                      pch = 19, ...){
   incrementX <- (max(Tlevel2)-min(Tlevel2))/100
   incrementY <- (max(Tlevel1)-min(Tlevel1))/100
   seqX = seq(min(Tlevel2),max(Tlevel2),incrementX) 
@@ -50,7 +49,7 @@ plot_pred <- function(pars,Tlevel1, Tlevel2,
         col=heat.colors(100),cex.axis = 1.25, cex.lab = 1.5, las = 1)
   points(Tlevel2,Tlevel1,pch = pch, cex = 0.5)  
   if(legend){
-    legend.gradient(pnts = cbind(x =c(max(seqX)+(incrementX*2),
+    SDMTools::legend.gradient(pnts = cbind(x =c(max(seqX)+(incrementX*2),
                                       max(seqX)+(incrementX*10),
                                       max(seqX)+(incrementX*10),
                                       max(seqX)+(incrementX*2)),
