@@ -1,6 +1,6 @@
 # traitmatch: Package to predict trait matching from species interactions.
 
-This document reproduces the analysis done in Bartomeus et al. 2015 (Functional Ecology) to show how it works.
+This document reproduces the analysis done in Bartomeus et al. 2016 (In review at Functional Ecology) to show how it works.
 
 To install the package run (only once):
 
