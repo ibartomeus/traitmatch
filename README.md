@@ -9,7 +9,7 @@ install.packages("devtools")
 install.packages("GenSA") 
 install.packages("SDMTools") 
 require(devtools)
-install_github("traitmatch", "ibartomeus")
+install_github("ibartomeus/traitmatch")
 require(traitmatch)
 ```
 
