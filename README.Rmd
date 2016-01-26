@@ -86,7 +86,7 @@ We can see in this case that the estimates are similar, but that the slope (alph
 # Compute likelihoods
 lh_model <- -integrated_model(pars_pre, MPrey, MPred, mean(MPrey),sd(MPrey))
 lh_niche <- -niche_model(pars_pre_niche, MPrey, MPred, mean(MPrey), sd(MPrey))
-lh_neutral <- -neutral_model(MPrey, MPred, mean(MPrey), sd(MPrey))
+lh_neutral <- -neutral_model(pars = NULL, MPrey, MPred, mean(MPrey), sd(MPrey))
 
 # Visualization
 barplot(c(lh_model, lh_niche, lh_neutral), names.arg = c("integrated", "niche", "neutral"))
@@ -141,7 +141,7 @@ lh_niche <- -niche_model(pars_grass_bin_niche, grass$P.Leaf.dry.matter.content,
                          grass$G.Incisive.strength, 
                          mean(grass$P.Leaf.dry.matter.content), 
                          sd(grass$P.Leaf.dry.matter.content))
-lh_neutral <- -neutral_model(grass$P.Leaf.dry.matter.content, grass$G.Incisive.strength, 
+lh_neutral <- -neutral_model(pars = NULL, grass$P.Leaf.dry.matter.content, grass$G.Incisive.strength, 
                              mean(grass$P.Leaf.dry.matter.content), 
                              sd(grass$P.Leaf.dry.matter.content))
 
@@ -196,7 +196,7 @@ lh_model <- -integrated_model(pars_grass_freq, Dry.matter, Incisive.strength,
 lh_niche <- -niche_model(pars_grass_freq_niche, Dry.matter, Incisive.strength, 
                          mean(grass$P.Leaf.dry.matter.content), 
                          sd(grass$P.Leaf.dry.matter.content))
-lh_neutral <- -neutral_model(Dry.matter, Incisive.strength, 
+lh_neutral <- -neutral_model(pars = NULL, Dry.matter, Incisive.strength, 
                              mean(grass$P.Leaf.dry.matter.content),
                              sd(grass$P.Leaf.dry.matter.content))
 
@@ -260,7 +260,7 @@ lh_model <- -integrated_model(pars_pols, pols$nectar_holder_depth_mm, log(pols$t
 lh_niche <- -niche_model(pars_pol_niche, pols$nectar_holder_depth_mm, log(pols$tongue), 
                          weighted_mean(plants$nectar_holder_depth_mm, plants$cover),
                          sd(pols$nectar_holder_depth_mm))
-lh_neutral <- -neutral_model(pols$nectar_holder_depth_mm, log(pols$tongue), 
+lh_neutral <- -neutral_model(pars = NULL, pols$nectar_holder_depth_mm, log(pols$tongue), 
                              weighted_mean(plants$nectar_holder_depth_mm, plants$cover),
                              weighted_sd(plants$nectar_holder_depth_mm, plants$cover))
 
@@ -322,7 +322,7 @@ lh_model <- -integrated_model(pars_host, host_body_length, parasite_body_length,
 lh_niche <- -niche_model(pars_host_niche, host_body_length, parasite_body_length, 
                          weighted_mean(host$host_body_length, host$freq), 
                          weighted_sd(host$host_body_length, host$freq))
-lh_neutral <- -neutral_model(host_body_length, parasite_body_length, 
+lh_neutral <- -neutral_model(pars = NULL, host_body_length, parasite_body_length, 
                              weighted_mean(host$host_body_length, host$freq), 
                              weighted_sd(host$host_body_length, host$freq))
 
