@@ -1,5 +1,3 @@
-library(traitmatch)
-
 context("Useful functions")
 
 test_that("weigthed mean works", {
