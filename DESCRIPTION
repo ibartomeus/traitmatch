@@ -6,11 +6,12 @@ Date: 2015-07-31
 Author: Dominique Gravel and Ignasi Bartomeus <nacho.bartomeus@gmail.com>
 Maintainer: Ignasi Bartomeus <nacho.bartomeus@gmail.com>
 Depends:
-  knitr,
-  GenSA
+    knitr,
+    GenSA
 Imports:
-  GenSA,
-  SDMTools
+    GenSA,
+    SDMTools
 LazyData: true
 Description: Package to predict trait matching from species interactions.
 License: GPL (>= 2)
+RoxygenNote: 5.0.1
