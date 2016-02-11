@@ -8,14 +8,15 @@
 #' @param pars Parameters of the model obtained with fit_it function (alpha0, alpha 1, beta 0 and beta 1)
 #' @param Tlevel1 Vector of trait values of the first interaction partner.
 #' @param Tlevel2 Vector of trait values of the second interaction partner.
-#' @param xlab 
-#' @param ylab
+#' @param xlab label for x axes
+#' @param ylab label for y axes
 #' @param legend Logical value indicating if the legend should be plotted. Default = TRUE
 #' @param pch Default = 19. Use "." when lots of data available.
+#' @param ... other parameters to be passed to plot.
 #' 
 #' @return A plot
 #'
-#' @examples 
+#' @note 
 #' See readme file here: https://github.com/ibartomeus/trait_match
 #' 
 #' @author
@@ -41,7 +42,7 @@ plot_pred <- function(pars,Tlevel1, Tlevel2,
   # Compute the conditional
   pLM = exp(-(o-XY[,2])^2/2/r^2)
   
-  Z = matrix(pLM,nr = length(seqX), nc = length(seqY))
+  Z = matrix(pLM, nrow = length(seqX), ncol = length(seqY))
   
   par(mar = c(5.5,4.1,4.1,5.5)) #tune up
   par(xpd=TRUE)

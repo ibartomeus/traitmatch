@@ -14,11 +14,15 @@ plot_pred(pars, Tlevel1, Tlevel2, xlab = "Trait level 2",
 
 \item{Tlevel2}{Vector of trait values of the second interaction partner.}
 
-\item{xlab}{}
+\item{xlab}{label for x axes}
+
+\item{ylab}{label for y axes}
 
 \item{legend}{Logical value indicating if the legend should be plotted. Default = TRUE}
 
 \item{pch}{Default = 19. Use "." when lots of data available.}
+
+\item{...}{other parameters to be passed to plot.}
 }
 \value{
 A plot
@@ -27,9 +31,8 @@ A plot
 This is just a pre-built function for easy visualization. Other options are possible. 
 Only works with the default gaussian model (integrated and niche model).
 }
-\examples{
+\note{
 See readme file here: https://github.com/ibartomeus/trait_match
-
 }
 \author{
 Dominique Gravel and Ignasi Bartomeus

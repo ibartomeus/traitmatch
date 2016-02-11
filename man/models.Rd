@@ -7,8 +7,21 @@
 \usage{
 integrated_model(pars, Tlevel1, Tlevel2, mean_Tlevel1, sd_Tlevel1)
 }
+\arguments{
+\item{pars}{parameters obtained from fit_it function or a vector of the form c(a0 = 0, a1 = 0, b0 = 0, b1 = 0) with known parameters.}
+
+\item{Tlevel1}{Vector of trait values of the first interaction partner.}
+
+\item{Tlevel2}{Vector of trait values of the second interaction partner.}
+
+\item{mean_Tlevel1}{Mean of trait values of the first interaction partner. Can be weighted or not,
+and can use independent information on the trait distribution to be calculated.}
+
+\item{sd_Tlevel1}{Standard deviation of trait values of the first interaction partner. Can be weighted or not,
+and can use independent information on the trait distribution to be calculated.}
+}
 \description{
-This models are described in Bartomeus at al. (2015 Functional Ecology) and are based
+This models are described in Bartomeus et al. 2016 (Functional Ecology) and are based
 on Williams et al. 2000 models. They are intended to be used with fit_it function. The integrated model 
 considers both neutral and niche constraints, while the neutral and niche models only consider its respective
 components.
@@ -17,7 +30,7 @@ components.
 Dominique Gravel
 }
 \references{
-Williams, R.J., Anandanadesan, A. & Purves, D. (2010) The probabilistic niche model reveals the niche structure and role of body size in a complex food web. PloS one, 5, e12092.
-Williams, R.J. & Martinez, N.D. (2000) Simple rules yield complex food webs. Nature, 404, 180–183.#'
+Williams, R.J., Anandanadesan, A. and Purves, D. (2010) The probabilistic niche model reveals the niche structure and role of body size in a complex food web. PloS one, 5, e12092.
+Williams, R.J. and Martinez, N.D. (2000) Simple rules yield complex food webs. Nature, 404, 180–183.
 }
 

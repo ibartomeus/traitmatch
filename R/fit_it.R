@@ -21,7 +21,7 @@
 #' 
 #' @return a vector with the estimated parameters of the form c(a0 = x, a1 = y, b0 = z, b1 = w)
 #'
-#' @examples 
+#' @note  
 #' See readme file here: https://github.com/ibartomeus/trait_match
 #' 
 #' @author

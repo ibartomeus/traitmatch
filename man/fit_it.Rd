@@ -39,9 +39,8 @@ a vector with the estimated parameters of the form c(a0 = x, a1 = y, b0 = z, b1 
 \description{
 Fit the paramaters of a given model to data using SA. Can be slow for large datasets.
 }
-\examples{
+\note{
 See readme file here: https://github.com/ibartomeus/trait_match
-
 }
 \author{
 Dominique Gravel and Ignasi Bartomeus
