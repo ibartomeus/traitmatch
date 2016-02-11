@@ -1,9 +1,5 @@
----
-title: "traitmatch"
-author: "I. Bartomeus"
-date: "1 Aug 2015"
-output: html_document
----
+[![Build Status](https://travis-ci.org/ibartomeus/traitmatch.svg?branch=master)](https://travis-ci.org/ibartomeus/traitmatch)
+
 # traitmatch: Package to predict trait matching from species interactions.
 
 This document reproduces the analysis done in Bartomeus et al. 2015 (Functional Ecology) to show how it works.
