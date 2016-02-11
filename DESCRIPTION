@@ -10,6 +10,8 @@ Depends:
 Imports:
     GenSA,
     SDMTools
+Suggests:
+    testthat (>= 0.8.0)
 LazyData: true
 Description: Package to predict trait matching from species interactions.
 License: GPL (>= 2)
