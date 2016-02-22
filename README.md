@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/ibartomeus/traitmatch.svg?branch=master)](https://travis-ci.org/ibartomeus/traitmatch)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.46382.svg)](http://dx.doi.org/10.5281/zenodo.46382)
 
 # traitmatch: Package to predict trait matching from species interactions.
 
